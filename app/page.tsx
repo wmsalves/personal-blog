@@ -1,8 +1,8 @@
-import ArticleItemList from "@/components/ArticleListItem"
-import { getSortedArticles } from "@/lib/articles"
+import ArticleItemList from "@/components/ArticleListItem";
+import { getSortedArticles } from "@/lib/articles";
 
 const HomePage = () => {
-  const articles = getSortedArticles()
+  const articles = getSortedArticles();
 
   return (
     <section className="mx-auto w-11/12 md:w-1/2 mt-20 flex flex-col gap-16 mb-20">
@@ -20,7 +20,7 @@ const HomePage = () => {
           ))}
       </section>
     </section>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
