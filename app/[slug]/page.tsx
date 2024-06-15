@@ -6,11 +6,6 @@ const Article = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <section>
-      <div className="flex justify-between">
-        <Link href={"/"} className="flex flex-row gap-1">
-          back to home
-        </Link>
-      </div>
       <article dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
     </section>
   );

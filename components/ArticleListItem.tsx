@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 interface Props {
@@ -6,15 +8,14 @@ interface Props {
 }
 
 const ArticleItemList = ({ category, articles }: Props) => {
+  console.log(articles);
+
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col">
       <h2>{category}</h2>
       <div className="flex flex-col">
         {articles.map((article, id) => (
-          <Link
-            href={`/${article.id}`}
-            key={id}
-          >
+          <Link href={`/${article.id}`} key={id}>
             {article.title}
           </Link>
         ))}
