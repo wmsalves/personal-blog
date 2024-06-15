@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="min-h-screen">
       <body className={`${jetBrainsMono.className} min-h-full`}>
-        <header className="max-w-prose mx-auto mb-12">
+        <header className="max-w-prose mx-auto mb-8">
           <nav className="flex items-center justify-between">
-            <Link className="flex flex-col gap-2" href="/">
+            <Link className="flex flex-col" href="/">
               <span className="font-bold">LukeberryPi</span>
-              Software Engineer
+              Design Engineer
             </Link>
             <div className="items-center flex gap-2">
               <a

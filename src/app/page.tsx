@@ -6,7 +6,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <h1>minimal blog</h1>
+      <h1>thoughts</h1>
       <section>
         <ArticleItemList articles={articles} />
       </section>

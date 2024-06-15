@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 @layer base {
-  a {
+  article {
     @apply font-bold underline decoration-2 underline-offset-2 decoration-teal-500;
+  }
+
+  h1 {
+    @apply font-bold;
+  }
+
+  h2, h3, h4, h5, h6 {
+    @apply uppercase tracking-widest;
   }
 }
