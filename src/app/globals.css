@@ -5,11 +5,19 @@
 @layer base {
   html,
   body {
-    @apply bg-zinc-50 text-zinc-500;
+    @apply bg-zinc-50;
   }
 
-  article h1, h2, h3, h4, h5, h6 {
-    @apply text-zinc-800 uppercase tracking-wider;
+  article h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-zinc-700 uppercase tracking-wider;
   }
 
+  article p {
+    @apply text-zinc-500;
+  }
 }

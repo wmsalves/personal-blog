@@ -29,20 +29,8 @@ export default function RootLayout({
               Software Engineer
             </Link>
             <div className="items-center flex gap-4">
-              <a
-                href="https://github.com/LukeberryPi"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SiGithub />
-              </a>
-              <a
-                href="https://twitter.com/LukeberryPi"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SiTwitter />
-              </a>
+              <Link href="/links">Links</Link>
+              <Link href="/about">About</Link>
             </div>
           </nav>
         </header>
