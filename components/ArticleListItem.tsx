@@ -1,9 +1,8 @@
-import Link from "next/link"
-import type { ArticleItem } from "@/types"
+import Link from "next/link";
 
 interface Props {
-  category: string
-  articles: ArticleItem[]
+  category: string;
+  articles: any[];
 }
 
 const ArticleItemList = ({ category, articles }: Props) => {
@@ -22,7 +21,7 @@ const ArticleItemList = ({ category, articles }: Props) => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ArticleItemList
+export default ArticleItemList;

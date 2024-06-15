@@ -5,11 +5,16 @@ import moment from "moment";
 import { remark } from "remark";
 import html from "remark-html";
 
-import type { ArticleItem } from "@/types";
+type ArticleItem = {
+  id: string;
+  title: string;
+  date: string;
+  category: string;
+};
 
 const articlesDirectory = path.join(process.cwd(), "articles");
 
-export const getSortedArticles = (): ArticleItem[] => {
+export const getArticles = (): ArticleItem[] => {
   const fileNames = fs.readdirSync(articlesDirectory);
 
   const allArticlesData = fileNames.map((fileName) => {
@@ -28,18 +33,7 @@ export const getSortedArticles = (): ArticleItem[] => {
     };
   });
 
-  return allArticlesData.sort((a: ArticleItem, b: ArticleItem) => {
-    const format = "DD-MM-YYYY";
-    const dateOne = moment(a.date, format);
-    const dateTwo = moment(b.date, format);
-    if (dateOne.isBefore(dateTwo)) {
-      return -1;
-    } else if (dateOne.isAfter(dateTwo)) {
-      return 1;
-    } else {
-      0;
-    }
-  });
+  return allArticlesData;
 };
 
 export const getArticleData = async (id: string) => {
