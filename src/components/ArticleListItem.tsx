@@ -7,12 +7,11 @@ interface Props {
 }
 
 const ArticleItemList = ({ articles }: Props) => {
-  console.log(articles);
 
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-12">
-        {articles.map((article) => (
+        {articles.map((article: any) => (
           <Link key={article.id} href={`/${article.id}`}>
             {article.title}
           </Link>
