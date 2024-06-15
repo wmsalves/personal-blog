@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Karla } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import { Sun, SunDim, SunSnow, Sunrise } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "LukeberryPi's Blog",
@@ -28,6 +29,7 @@ export default function RootLayout({
               Software Engineer
             </Link>
             <div className="items-center flex gap-4">
+              <button><Sun className="size-5"/></button>
               <Link href="/projects">Projects</Link>
               <Link href="/articles">Articles</Link>
               <Link href="/about">About</Link>
