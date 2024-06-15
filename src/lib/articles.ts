@@ -5,31 +5,29 @@ import moment from "moment";
 import { remark } from "remark";
 import html from "remark-html";
 
-type ArticleItem = {
+export type ArticleItem = {
   id: string;
   title: string;
   date: string;
-  category: string;
 };
 
-const articlesDirectory = path.join(process.cwd(), "articles");
+const ARTICLES_DIR = path.join(process.cwd(), "src/articles");
 
-export const getArticles = (): ArticleItem[] => {
-  const fileNames = fs.readdirSync(articlesDirectory);
+export const getArticles = () => {
+  const fileNames = fs.readdirSync(ARTICLES_DIR);
 
   const allArticlesData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, "");
 
-    const fullPath = path.join(articlesDirectory, fileName);
+    const fullPath = path.join(ARTICLES_DIR, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf-8");
 
     const matterResult = matter(fileContents);
 
     return {
       id,
-      title: matterResult.data.title as string,
-      date: matterResult.data.date as string,
-      category: matterResult.data.category as string,
+      title: matterResult.data.title,
+      date: matterResult.data.date,
     };
   });
 
@@ -37,7 +35,7 @@ export const getArticles = (): ArticleItem[] => {
 };
 
 export const getArticleData = async (id: string) => {
-  const fullPath = path.join(articlesDirectory, `${id}.md`);
+  const fullPath = path.join(ARTICLES_DIR, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf-8");
   const matterResult = matter(fileContents);
   const processedContent = await remark()
@@ -49,7 +47,6 @@ export const getArticleData = async (id: string) => {
     id,
     contentHtml,
     title: matterResult.data.title,
-    category: matterResult.data.category,
     date: moment(matterResult.data.date, "DD-MM-YYYY").format("MMMM Do YYYY"),
   };
 };

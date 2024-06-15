@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${jetBrainsMono.className}`}>
+    <html lang="en" className="min-h-screen">
+      <body className={`${jetBrainsMono.className} min-h-full`}>
         <header className="bg-red-500">
           <nav>
             <Link className="flex flex-col gap-2" href="/">

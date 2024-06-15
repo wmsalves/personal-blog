@@ -1,7 +1,10 @@
-import Link from "next/link";
-import { getArticleData } from "@/lib/articles";
+import { getArticleData } from "@/src/lib/articles";
 
-const Article = async ({ params }: { params: { slug: string } }) => {
+export default async function Article({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const articleData = await getArticleData(params.slug);
 
   return (
@@ -9,6 +12,4 @@ const Article = async ({ params }: { params: { slug: string } }) => {
       <article dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
     </section>
   );
-};
-
-export default Article;
+}
