@@ -1,6 +1,6 @@
 import { getArticleData } from "@/src/lib/articles";
 
-export default async function Article({
+export default async function ArticlePage({
   params,
 }: {
   params: { slug: string };

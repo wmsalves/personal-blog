@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, JetBrains_Mono, Poppins } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
@@ -29,7 +29,7 @@ export default function RootLayout({
             </Link>
           </nav>
         </header>
-        <main className="max-w-prose mx-auto">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

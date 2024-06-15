@@ -8,10 +8,7 @@ export default function HomePage() {
     <div>
       <h1>minimal blog</h1>
       <section>
-        {articles !== null &&
-          Object.keys(articles).map((article) => (
-            <ArticleItemList articles={articles} key={article} />
-          ))}
+        <ArticleItemList articles={articles} />
       </section>
     </div>
   );
