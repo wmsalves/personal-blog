@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import "./globals.css";
 import Link from "next/link";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "LukeberryPi's Blog",

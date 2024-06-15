@@ -11,8 +11,12 @@ const ArticleItemList = ({ articles }: Props) => {
 
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col">
-        {articles.map((article) => (<p>{article.title}</p>))}
+      <div className="flex flex-col gap-12">
+        {articles.map((article) => (
+          <Link key={article.id} href={`/${article.id}`}>
+            {article.title}
+          </Link>
+        ))}
       </div>
     </div>
   );
