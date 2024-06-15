@@ -20,4 +20,8 @@
   article p {
     @apply text-zinc-500;
   }
+
+  button, a {
+    @apply active:translate-y-1 transition-transform
+  }
 }

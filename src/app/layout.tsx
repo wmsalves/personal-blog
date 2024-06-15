@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Karla } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
-import { SiGithub, SiTwitter } from "@icons-pack/react-simple-icons";
 
 export const metadata: Metadata = {
   title: "LukeberryPi's Blog",
