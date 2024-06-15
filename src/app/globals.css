@@ -3,15 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  article {
-    @apply font-bold underline decoration-2 underline-offset-2 decoration-teal-500;
+  html,
+  body {
+    @apply bg-zinc-50 text-zinc-500;
   }
 
-  h1 {
-    @apply font-bold;
+  article h1, h2, h3, h4, h5, h6 {
+    @apply text-zinc-800 uppercase tracking-wider;
   }
 
-  h2, h3, h4, h5, h6 {
-    @apply uppercase tracking-widest;
-  }
 }

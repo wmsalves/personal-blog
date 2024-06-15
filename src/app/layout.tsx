@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Karla } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { SiGithub, SiTwitter } from "@icons-pack/react-simple-icons";
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "LukberryPi's Blog",
 };
 
-export const jetBrainsMono = JetBrains_Mono({
+export const jetBrainsMono = Karla({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -21,14 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="min-h-screen">
-      <body className={`${jetBrainsMono.className} min-h-full`}>
+      <body className={`${jetBrainsMono.className} min-h-full p-4`}>
         <header className="max-w-prose mx-auto mb-8">
           <nav className="flex items-center justify-between">
             <Link className="flex flex-col" href="/">
               <span className="font-bold">LukeberryPi</span>
-              Design Engineer
+              Software Engineer
             </Link>
-            <div className="items-center flex gap-2">
+            <div className="items-center flex gap-4">
               <a
                 href="https://github.com/LukeberryPi"
                 target="_blank"

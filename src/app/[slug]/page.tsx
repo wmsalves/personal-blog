@@ -9,6 +9,10 @@ export default async function ArticlePage({
 
   return (
     <section>
+      <span className="flex gap-2 mb-3">
+        <h1 className="font-bold">{articleData.title}</h1>
+        <span className="text-zinc-600">{articleData.date}</span>
+      </span>
       <article dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
     </section>
   );
