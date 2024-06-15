@@ -86,7 +86,7 @@ const internalLinks = [
 
 const InternalLink = (link: Link) => {
   return (
-    <Link className="group flex items-center gap-2" href={link.url}>
+    <Link className="group flex items-center gap-1" href={link.url}>
       {link.description}
       <ChevronRight className="size-5 group-hover:translate-x-1 transition-transform" />
     </Link>
