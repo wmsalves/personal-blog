@@ -47,6 +47,6 @@ export const getArticleData = async (id: string) => {
     id,
     contentHtml,
     title: matterResult.data.title,
-    date: moment(matterResult.data.date, "DD-MM-YYYY").format("MMMM Do YYYY"),
+    date: moment(matterResult.data.date, "DD-MM-YYYY").format("MMMM Do, YYYY"),
   };
 };

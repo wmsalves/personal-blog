@@ -21,7 +21,12 @@
     @apply text-zinc-500;
   }
 
-  button, a {
-    @apply active:translate-y-1 transition-transform
+  header a, footer a, article a {
+    @apply underline underline-offset-2 decoration-2 decoration-emerald-600;
+  }
+
+  button,
+  a {
+    @apply active:translate-y-1 transition-transform;
   }
 }

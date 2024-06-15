@@ -20,10 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="min-h-screen">
-      <body className={`${jetBrainsMono.className} min-h-screen p-4`}>
+      <body className={`${jetBrainsMono.className} min-h-full p-4`}>
         <header className="max-w-prose mx-auto mb-8">
           <nav className="flex items-center justify-between">
-            <Link className="flex flex-col" href="/">
+            <Link className="flex flex-col no-underline" href="/">
               <span className="font-bold">LukeberryPi</span>
               Software Engineer
             </Link>
@@ -34,17 +34,7 @@ export default function RootLayout({
             </div>
           </nav>
         </header>
-        <main className="mx-auto max-w-prose h-[calc(100vh-12rem)] relative">{children}</main>
-        <div className="mx-auto max-w-prose relative">
-          <footer className="bg-red-500 w-full p-4">
-            <a href="https://github.com/LukeberryPi/blog" target="_blank">
-              Code
-            </a>
-            <span className="flex items-center gap-2">
-              LukeberryPi, {new Date().getFullYear()}
-            </span>
-          </footer>
-        </div>
+        <main className="mx-auto max-w-prose">{children}</main>
       </body>
     </html>
   );

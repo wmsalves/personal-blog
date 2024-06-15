@@ -6,11 +6,7 @@ import {
   SiTwitter,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
-import {
-  ChevronRight,
-  Download,
-  ExternalLinkIcon,
-} from "lucide-react";
+import { ChevronRight, Download, ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -114,11 +110,19 @@ export default function LinksPage() {
             />
           ))}
         </div>
-        <button className="bg-zinc-900 p-4 text-zinc-100 flex items-center gap-4 hover:bg-zinc-800 transition-all active:translate-y-1">
+        <button className="bg-zinc-900 p-4 text-zinc-100 flex items-center gap-4 hover:bg-zinc-700 transition-all active:translate-y-1">
           Download my CV
           <Download className="size-5" />
         </button>
       </div>
+      <footer className="py-4 mx-auto max-w-prose absolute flex items-center justify-between bottom-0 w-[65ch]">
+        <a href="https://github.com/LukeberryPi/blog" target="_blank">
+          Code
+        </a>
+        <span>
+          &copy; LukeberryPi, {new Date().getFullYear()}
+        </span>
+      </footer>
     </div>
   );
 }
