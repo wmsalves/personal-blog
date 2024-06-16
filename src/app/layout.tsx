@@ -29,7 +29,8 @@ export default function RootLayout({
               Software Engineer
             </Link>
             <div className="items-center flex gap-4">
-              <button><Sun className="size-5"/></button>
+              <button><Sun className="size-5" /></button>
+              <Link href="/">Home</Link>
               <Link href="/projects">Projects</Link>
               <Link href="/articles">Articles</Link>
               <Link href="/about">About</Link>

@@ -1,7 +1,7 @@
 export default function AboutPage() {
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-4xl font-bold">About me</h1>
+      <h1 className="font-bold">About me</h1>
       <p className="text-lg">
         I am a software engineer with a passion for building web applications.
         I have a background in computer science and have worked on various
