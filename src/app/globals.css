@@ -5,28 +5,32 @@
 @layer base {
   html,
   body {
-    @apply bg-zinc-50;
+    @apply bg-zinc-50 text-zinc-900;
   }
 
   article h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply text-zinc-700 uppercase tracking-wider;
+  article h2,
+  article h3,
+  article h4,
+  article h5,
+  article h6 {
+    @apply text-zinc-900 uppercase tracking-wider;
   }
 
-  article p {
-    @apply text-zinc-500;
+  article p,
+  article ul,
+  article span {
+    @apply text-zinc-700;
   }
 
-  header a, footer a, article a {
+  header a,
+  footer a,
+  article a {
     @apply underline underline-offset-2 decoration-2 decoration-emerald-600;
   }
 
   button,
   a {
-    @apply active:translate-y-1 transition-transform;
+    @apply active:translate-y-1 transition-all;
   }
 }

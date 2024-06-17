@@ -6,7 +6,7 @@ import {
   SiTwitter,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
-import { ChevronRight, Download, ExternalLinkIcon } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Download } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -55,12 +55,12 @@ const ExternalLink = (link: Link) => {
       key={link.description}
       href={link.url}
       target="_blank"
-      className="flex items-center justify-between ring-1 ring-black p-4 hover:bg-zinc-200 transition-all"
+      className="flex items-center justify-between ring-1 ring-zinc-900 p-4 hover:bg-zinc-200 transition-all"
     >
       <span className="flex items-center gap-4">
         {link.Icon} {link.description}
       </span>
-      <ExternalLinkIcon className="size-5" />
+      <ArrowUpRight className="size-5" />
     </a>
   );
 };
@@ -82,14 +82,14 @@ const internalLinks = [
 
 const InternalLink = (link: Link) => {
   return (
-    <Link className="group flex items-center gap-1" href={link.url}>
+    <Link className="group flex items-center gap-2" href={link.url}>
       {link.description}
-      <ChevronRight className="size-5 group-hover:translate-x-1 transition-transform" />
+      <ArrowRight className="size-5 group-hover:translate-x-1 transition-all" />
     </Link>
   );
 };
 
-export default function LinksPage() {
+export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
       {externalLinks.map((link: Link) => (
@@ -119,9 +119,7 @@ export default function LinksPage() {
         <a href="https://github.com/LukeberryPi/blog" target="_blank">
           Code
         </a>
-        <span>
-          &copy; LukeberryPi, {new Date().getFullYear()}
-        </span>
+        <span>&copy; LukeberryPi, {new Date().getFullYear()}</span>
       </footer>
     </div>
   );
