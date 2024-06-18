@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "LukberryPi's Blog",
 };
 
-export const jetBrainsMono = Karla({
+const karla = Karla({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="min-h-screen">
-      <body className={`${jetBrainsMono.className} min-h-full p-4`}>
+      <body className={`${karla.className} min-h-full p-4`}>
         <header className="max-w-prose mx-auto mb-8">
           <nav className="flex items-center justify-between">
             <Link className="flex flex-col no-underline" href="/">
