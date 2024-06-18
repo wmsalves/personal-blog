@@ -17,7 +17,7 @@ export default function ProjectsPage() {
             target="_blank"
             className="group block overflow-hidden relative ring-1 ring-zinc-900"
           >
-            <span className="z-10 absolute flex items-center gap-2 top-2 right-2 invisible group-hover:visible text-slate-100">
+            <span className="z-10 absolute flex items-center transition-all gap-2 top-2 right-2 opacity-0 group-hover:opacity-100 text-slate-100">
               Click to visit website <ArrowUpRight className="size-5" />
             </span>
             <Image
@@ -61,13 +61,18 @@ export default function ProjectsPage() {
             </li>
           </ul>
           <div className="items-center flex gap-4">
-            <a className="items-center flex gap-2" href="https://css2wind.com">
+            <a
+              className="items-center flex gap-2"
+              href="https://css2wind.com"
+              target="_blank"
+            >
               Visit website
               <ArrowUpRight className="size-5" />
             </a>
             <a
               className="items-center flex gap-2"
               href="https://github.com/LukeberryPi/css2wind"
+              target="_blank"
             >
               View code
               <ArrowUpRight className="size-5" />
@@ -85,7 +90,7 @@ export default function ProjectsPage() {
             className="group block overflow-hidden relative ring-1 ring-zinc-900"
             target="_blank"
           >
-            <span className="z-10 absolute flex items-center gap-2 top-2 right-2 invisible group-hover:visible">
+            <span className="z-10 absolute flex items-center gap-2 top-2 right-2 opacity-0 transition-all group-hover:opacity-100">
               Click to visit website <ArrowUpRight className="size-5" />
             </span>
             <Image
@@ -101,7 +106,7 @@ export default function ProjectsPage() {
             one premise: you can&apos;t have more than five tasks at the same
             time. If you want to add more tasks, you have to complete one of the
             previous tasks. It is beautiful, efficient and privacy-first (no
-            informatio is stored). It also has:
+            information is stored). It also has:
           </p>
           <ul className="space-y-4">
             <li>
@@ -118,13 +123,18 @@ export default function ProjectsPage() {
             </li>
           </ul>
           <div className="items-center flex gap-4">
-            <a className="items-center flex gap-2" href="https://phived.com">
+            <a
+              className="items-center flex gap-2"
+              href="https://phived.com"
+              target="_blank"
+            >
               Visit website
               <ArrowUpRight className="size-5" />
             </a>
             <a
               className="items-center flex gap-2"
               href="https://github.com/LukeberryPi/phived"
+              target="_blank"
             >
               View code
               <ArrowUpRight className="size-5" />
