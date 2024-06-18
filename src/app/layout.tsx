@@ -3,6 +3,7 @@ import { Karla } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { Sun } from "lucide-react";
+import { ScrollToTop } from "../components/scroll-to-top";
 
 export const metadata: Metadata = {
   title: "LukeberryPi's Blog",
@@ -37,7 +38,7 @@ export default function RootLayout({
             </div>
           </nav>
         </header>
-        <main className="mx-auto max-w-prose">{children}</main>
+        <main className="mx-auto max-w-prose">{children}<ScrollToTop /></main>
       </body>
     </html>
   );
