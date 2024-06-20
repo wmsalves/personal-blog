@@ -29,7 +29,7 @@ const externalLinks = [
   },
   {
     description: "Watch me talk",
-    url: "https://youtube.com/LukeberryPi",
+    url: "https://youtube.com/@LukeberryPi",
     Icon: <SiYoutube />,
   },
   {

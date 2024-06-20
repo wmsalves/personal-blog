@@ -1,37 +1,24 @@
-import { getArticles } from "@/src/lib/articles";
+import { Article, getArticles } from "@/src/lib/articles";
 
 import Link from "next/link";
-
-interface Props {
-  articles: any;
-}
-
-const ArticleList = ({ articles }: Props) => {
-  "use client";
-  return (
-    <div className="flex flex-col gap-6 w-full">
-      {articles.map((article: any) => (
-        <Link
-          className="flex items-center border-b border-black last:border-0 justify-between w-full"
-          key={article.id}
-          href={`/${article.id}`}
-        >
-          {article.title} {article.date}
-        </Link>
-      ))}
-    </div>
-  );
-};
 
 export default async function ArticlesPage() {
   const articles = getArticles();
 
   return (
-    <div>
+    <div className="w-full">
       <h1 className="my-12 font-bold">Articles</h1>
-      <section>
-        <ArticleList articles={articles} />
-    
+      <section className=" flex flex-col divide-y divide-zinc-300 w-full">
+        {articles.map((article: Article) => (
+          <Link
+            className="flex items-center justify-between w-full py-2"
+            key={article.id}
+            href={`/articles/${article.id}`}
+          >
+            {article.title}{" "}
+            <span className="text-zinc-500">{article.date}</span>
+          </Link>
+        ))}
       </section>
     </div>
   );

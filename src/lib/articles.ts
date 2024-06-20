@@ -5,7 +5,7 @@ import moment from "moment";
 import { remark } from "remark";
 import html from "remark-html";
 
-export type ArticleItem = {
+export type Article = {
   id: string;
   title: string;
   date: string;
