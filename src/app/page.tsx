@@ -18,32 +18,32 @@ interface Link {
 
 const externalLinks = [
   {
-    description: "Hire my services",
+    description: "LinkedIn",
     url: "https://linkedin.com/in/lukeberrypi",
     Icon: <SiLinkedin />,
   },
   {
-    description: "Steal my code",
+    description: "GitHub",
     url: "https://github.com/LukeberryPi",
     Icon: <SiGithub />,
   },
   {
-    description: "Watch me talk",
+    description: "Youtube",
     url: "https://youtube.com/@LukeberryPi",
     Icon: <SiYoutube />,
   },
   {
-    description: "Read my mind",
+    description: "X / Twitter",
     url: "https://twitter.com/LukeberryPi",
     Icon: <SiTwitter />,
   },
   {
-    description: "Hear me sing",
+    description: "Spotify",
     url: "https://open.spotify.com/artist/4ymHKBTThfeOL114lwCWPQ?si=Ci9I2yhCSY-BfEjtqZuFqQ",
     Icon: <SiSpotify />,
   },
   {
-    description: "See my face",
+    description: "Instagram",
     url: "https://instagram.com/LukeberryPi",
     Icon: <SiInstagram />,
   },
