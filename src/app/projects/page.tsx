@@ -7,7 +7,7 @@ export default function ProjectsPage() {
       <h1 className="my-12 font-bold">Projects</h1>
       <section className="space-y-20">
         <article className="space-y-6">
-          <h2>css2wind, a minigame for learning TailwindCSS</h2>
+          <h2>A minigame for learning TailwindCSS</h2>
           <span>
             <span className="font-bold">Made with: </span>
             Next.js, Typescript, and TailwindCSS
@@ -80,7 +80,7 @@ export default function ProjectsPage() {
           </div>
         </article>
         <article className="space-y-6">
-          <h2>phived, an anti-procrastination to-do list</h2>
+          <h2>An anti-procrastination to-do list</h2>
           <span>
             <span className="font-bold">Made with: </span> Vite, React and
             TailwindCSS

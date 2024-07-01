@@ -1,4 +1,5 @@
 import { Article, getArticles } from "@/src/lib/articles";
+import moment from "moment";
 
 import Link from "next/link";
 
@@ -16,7 +17,7 @@ export default async function ArticlesPage() {
             href={`/articles/${article.id}`}
           >
             {article.title}{" "}
-            <span className="text-zinc-500">{article.date}</span>
+            <span className="text-zinc-500">{moment(article.date, "DD-MM-YYYY").format("MMMM Do, YYYY")}</span>
           </Link>
         ))}
       </section>
