@@ -112,7 +112,7 @@ export default function HomePage() {
         </div>
         <a
           href="/luke-berry-cv.pdf"
-          download="Luke Berry CV"
+          download="Luke-Berry-CV.pdf"
           className="bg-zinc-900 p-4 text-zinc-100 flex items-center gap-4 hover:bg-zinc-700 transition-all active:translate-y-1"
         >
           Download my CV
