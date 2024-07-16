@@ -1,6 +1,5 @@
 ---
 title: "The Merchant of Venice"
-category: "books"
 date: "02-04-2023"
 ---
 
