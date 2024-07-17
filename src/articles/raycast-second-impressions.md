@@ -54,7 +54,7 @@ This is the soul of Raycast. Here is what I use the most:
 
 ## What I Wish Would Change
 
-### Snippets
+### Snippets and Text Replacements
 
 I have been using MacOS Text Replacement for a long time. Mostly for contact information, for example: "myemail" replaces into "lukeberrypi@gmail.com". Super handy.
 
@@ -74,9 +74,9 @@ Alfred opens it in Google Chrome and Raycast opens it in Safari. I much prefer t
 
 ### Escape
 
-In Raycast, "esc" goes back to the previous page. I wish I could configure this to the more universal "cmd + `[`" and "cmd + `]`", which I've grown used to. And an option for "esc" to close the entire Raycast app would be amazing.
+In Raycast, "Esc" goes back to the previous page. I wish I could configure this to the more universal "cmd + `[`" and "cmd + `]`", which I've grown used to. And an option for "Esc" to close the entire Raycast app would be amazing.
 
-### fn as a modifier key
+### Using "fn" as a Modifier Key
 
 It is impossible to setup hotkeys for Raycast using the "globe/fn" key. This would be a nice addition since using "cmd" and "ctrl" often leads to conflicting hotkeys between different apps.
 
