@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function ProjectsPage() {
   return (
     <>
-      <h1 className="my-12 font-bold">Projects</h1>
-      <section className="space-y-20">
-        <article className="space-y-6">
+      <h1>Projects</h1>
+      <section>
+        <article>
           <h2>A minigame for learning TailwindCSS</h2>
           <span>
             <span className="font-bold">Made with: </span>
@@ -15,13 +15,13 @@ export default function ProjectsPage() {
           <a
             href="https://css2wind.com"
             target="_blank"
-            className="group block overflow-hidden relative ring-1 ring-zinc-900"
+            className="group block overflow-hidden my-6 relative ring-1 ring-zinc-900"
           >
             <span className="z-10 absolute flex items-center transition-all gap-2 top-2 right-2 opacity-0 group-hover:opacity-100 text-zinc-100">
               Click to visit website <ArrowUpRight className="size-5" />
             </span>
             <Image
-              className="w-full h-full group-hover:scale-105 transition-all"
+              className="size-full group-hover:scale-105 transition-all"
               src="/projects/css2wind.png"
               width={9999}
               height={250}
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
             main feature is a minigame: there are eight CSS properties that you
             must translate to the equivalent TailwindCSS utility. It also has:{" "}
           </p>
-          <ul className="space-y-4">
+          <ul>
             <li>
               <span className="font-bold">Resources:</span> a page that details
               the recommended tooling to maximize productivity and
@@ -79,7 +79,7 @@ export default function ProjectsPage() {
             </a>
           </div>
         </article>
-        <article className="space-y-6">
+        <article>
           <h2>An anti-procrastination to-do list</h2>
           <span>
             <span className="font-bold">Made with: </span> Vite, React and
@@ -87,14 +87,14 @@ export default function ProjectsPage() {
           </span>
           <a
             href="https://phived.com"
-            className="group block overflow-hidden relative ring-1 ring-zinc-900"
+            className="group block overflow-hidden my-6 relative ring-1 ring-zinc-900"
             target="_blank"
           >
             <span className="z-10 absolute flex items-center gap-2 top-2 right-2 opacity-0 transition-all group-hover:opacity-100">
               Click to visit website <ArrowUpRight className="size-5" />
             </span>
             <Image
-              className="w-full h-full group-hover:scale-105 transition-all"
+              className="size-full group-hover:scale-105 transition-all"
               src="/projects/phived.png"
               width={250}
               height={250}
@@ -108,7 +108,7 @@ export default function ProjectsPage() {
             previous tasks. It is beautiful, efficient and privacy-first (no
             information is stored). It also has:
           </p>
-          <ul className="space-y-4">
+          <ul>
             <li>
               <span className="font-bold">Daily tasks: </span>a page to list
               five things you want to do everyday. Everyday, you can restore

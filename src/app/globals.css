@@ -43,7 +43,7 @@
   }
 
   article blockquote {
-    @apply border-l-4 border-emerald-500 pl-4 italic my-4;
+    @apply border-l-4 border-emerald-600 pl-4 italic my-4;
   }
 
   article code {
@@ -56,7 +56,7 @@
 
   header a,
   article a {
-    @apply underline underline-offset-2 decoration-2 decoration-emerald-500;
+    @apply underline underline-offset-2 decoration-2 decoration-emerald-600;
   }
 
   button,
