@@ -17,8 +17,8 @@
     @apply text-zinc-900 font-bold my-6;
   }
 
-  article h1 {
-    @apply border-b-2 border-zinc-200 pb-2;
+  article h2 {
+    @apply uppercase tracking-wide font-normal mt-12;
   }
 
   article p {
@@ -27,7 +27,7 @@
 
   article ul,
   article ol {
-    @apply text-zinc-700 my-4 pl-6;
+    @apply text-zinc-700 my-4 pl-8;
   }
 
   article li {
@@ -43,7 +43,7 @@
   }
 
   article blockquote {
-    @apply border-l-4 border-emerald-600 pl-4 italic my-4;
+    @apply border-l-4 border-emerald-500 pl-4 italic my-4;
   }
 
   article code {
@@ -54,14 +54,9 @@
     @apply bg-zinc-100 rounded p-4 my-4 overflow-x-auto;
   }
 
-  article img {
-    @apply max-w-full h-auto my-4 rounded-lg shadow-md;
-  }
-
   header a,
-  footer a,
   article a {
-    @apply underline underline-offset-2 decoration-2 decoration-emerald-600 hover:text-emerald-600 transition-colors duration-200;
+    @apply underline underline-offset-2 decoration-2 decoration-emerald-500;
   }
 
   button,

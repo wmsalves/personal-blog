@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <>
       <h1 className="my-12 font-bold">About</h1>
-      <article className="flex flex-col gap-6">
+      <article>
         <p>
           I am a brazilian software engineer with a passion for building things
           from the ground up. I am currently pursuing a degree in computer

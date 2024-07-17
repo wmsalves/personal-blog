@@ -9,7 +9,7 @@ export default async function ArticlePage({
 
   return (
     <section>
-      <span className="flex gap-2 flex-col my-12">
+      <span className="flex flex-col my-12">
         <h1 className="font-bold">{articleData.title}</h1>
         <span className="text-zinc-700">{articleData.date}</span>
       </span>

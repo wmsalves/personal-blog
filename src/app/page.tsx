@@ -84,7 +84,7 @@ const InternalLink = (link: Link) => {
   return (
     <Link className="group flex items-center gap-2" href={link.url}>
       {link.description}
-      <ArrowRight className="size-5 group-hover:translate-x-1 transition-all" />
+      <ArrowRight className="size-5 group-hover:tranzinc-x-1 transition-all" />
     </Link>
   );
 };
@@ -113,18 +113,12 @@ export default function HomePage() {
         <a
           href="/luke-berry-cv.pdf"
           download="Luke-Berry-CV.pdf"
-          className="bg-zinc-900 p-4 text-zinc-100 flex items-center gap-4 hover:bg-zinc-700 transition-all active:translate-y-1"
+          className="bg-zinc-900 p-4 text-zinc-100 flex items-center gap-4 hover:bg-zinc-700 transition-all active:tranzinc-y-1"
         >
           Download my CV
           <Download className="size-5" />
         </a>
       </div>
-      <footer className="py-4 mx-auto max-w-prose absolute flex items-center justify-between bottom-0 w-[65ch]">
-        <a href="https://github.com/LukeberryPi/blog" target="_blank">
-          Code
-        </a>
-        <span>&copy; LukeberryPi, {new Date().getFullYear()}</span>
-      </footer>
     </div>
   );
 }

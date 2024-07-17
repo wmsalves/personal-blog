@@ -17,7 +17,7 @@ export default function ProjectsPage() {
             target="_blank"
             className="group block overflow-hidden relative ring-1 ring-zinc-900"
           >
-            <span className="z-10 absolute flex items-center transition-all gap-2 top-2 right-2 opacity-0 group-hover:opacity-100 text-slate-100">
+            <span className="z-10 absolute flex items-center transition-all gap-2 top-2 right-2 opacity-0 group-hover:opacity-100 text-zinc-100">
               Click to visit website <ArrowUpRight className="size-5" />
             </span>
             <Image
