@@ -9,68 +9,79 @@ When I first bought a MacBook, I came across Alfred: an app launcher to replace 
 - Looking stuff up online and searching files on my computer
 - Searching all of my bookmarks and opening them
 
-I first heard of Raycast in November 2022. I was curious, but skeptical. I downloaded it and tried it out. The product felt a bit undercooked:
+When I first heard of Raycast. I was curious, but skeptical. I downloaded it and tried it out. The product felt a bit undercooked:
 
 - It opened up files when I wanted to open browser bookmarks
 - File search felt slower and less assertive than Alfred
 
-Even if my first experience with Raycast wasn't convincing, I definitely saw the potential. It felt slick and modern. It just didn't fit my use case.
+Even if my first experience with Raycast wasn't convincing, I definitely saw the potential. It felt slick and modern, it just didn't fit my use case.
 
-Disclaimer: I didn't take the time to configure Raycast as I had done with Alfred. In that sense, it was a bit unfair to expect Raycast's default to behave as I desired.
+Disclaimer: I didn't take the time to configure Raycast as I had done with Alfred. In that sense, it was a bit unfair to expect Raycast's default to behave exactly as I desired.
 
-Still, out-of-the-box (OOTB) behavior plays a huge role on migrating to/from a similar tool. Most users won't have the patience to config the new tool and, therefore, won't migrate.
+Still, out-of-the-box (OOTB) behavior plays a huge role on migrating to/from a similar tool. Most users won't have the patience to configure the new tool and will give up migrating altogether.
 
-On June 2024, I decided to give Raycast a second try. Spoiler: I no longer use Alfred. In this article I will explain why I came back, what I love and what I wish would change.
+I recently decided to give Raycast a second try. Spoiler: I no longer use Alfred. In this article I will explain why I came back, what I love and what I wish would change.
 
-## Why I tried it again
+## Why I Tried it Again
 
-Ultimately, what brought me back was [@peduarte](https://x.com/peduarte), a Software Engineer at Raycast, asking me in an [X thread](https://x.com/peduarte/status/1793990811014865072) what I thought Alfred did better.
+What brought me back was [@peduarte](https://x.com/peduarte), a Software Engineer at Raycast, asking me in an [X thread](https://x.com/peduarte/status/1793990811014865072) what I thought Alfred did better.
 
-After reading through some of my feedback, he invited me to join the Slack and be a beta-tester.
+After reading through my feedback, he invited me to join Slack and become a beta tester. This showed me Raycast excels at community and convinced me to try it again.
 
-This shows how Raycast excels at Community, which is vital for Developer Tools.
+## What I Love
 
-## What I love
+### User Interface and Experience
 
-### Uninstalling other apps to use Raycast instead
+First off, something that Raycast is impeccable at: UI + UX. The user feedback, the subtle animations, how they embraced keyboard-first. It felt seamless to customize and the onboarding was amazing.
 
-Uninstalling apps feels incredible. So far I have chopped off these in favor of the Raycast alternatives:
+### Uninstalling other Apps
+
+Uninstalling apps always feels good. And opting for Raycast's implementation often resulted in a better experience. Some applications that I chopped off in favor of using Raycast's own Extensions:
 
 - [Maccy](https://maccy.app/) for clipboard history
 - [Rocket](https://matthewpalmer.net/rocket/) for typing emojis
 - [Rectangle](https://rectangleapp.com/) for window management
 
-I get good UX and more storage on my MacBook: it's a win-win!
-
-### Extensions
+### Extensions and more Extensions!
 
 This is the soul of Raycast. Here is what I use the most:
 
-- [Spotify Controls](https://www.raycast.com/thomas/spotify-controls): I use "sp" to Play/Pause and "sa" and "sd" for the Next/Previous Track. These are better than the MacOS native because they don't conflict with other players (such as pausing a Youtube video by accident instead of a Spotify track)
+- [Spotify Controls](https://www.raycast.com/thomas/spotify-controls): I use "sp" to Play/Pause and "sa" and "sd" for the Next/Previous Track. These are better than the native keyboard controls because they don't conflict with other players (such as accidentally pausing a Youtube video instead of a Spotify track).
 
-- [Google Chrome](https://www.raycast.com/Codely/google-chrome): one feature makes this extension for me: Search Tabs. Even if Chrome is minimized, I can access specific tabs in seconds. A common usecase is to go from VS Code straight into ChatGPT. Or from anywhere to WhatsApp.
+- [Google Chrome](https://www.raycast.com/Codely/google-chrome): one feature makes this extension for me: Search Tabs. Even if Chrome is minimized, I can access specific tabs in seconds. A common use case is to go from VS Code straight into ChatGPT. Or open my WhatsApp tab from anywhere.
 
-- [Google Translate](https://www.raycast.com/gebeto/translate): I'm currently travelling around Europe and the possibility of translating a sentence from/into 4 languages in seconds is unbelievably handy.
+- [Google Translate](https://www.raycast.com/gebeto/translate): I'm currently travelling around Europe and the possibility of translating a sentence [from/into any number of languages](https://x.com/LukeberryPi/status/1813352420623188453) is unbelievably handy.
 
-
-## What I wish would change
+## What I Wish Would Change
 
 ### Snippets
 
-I have been using the iOS + MacOS Text Replacements since forever. What I use it for the most is my contact information, for example: "myemail" replaces into "lukeberrypi@gmail.com".
+I have been using MacOS Text Replacement for a long time. Mostly for contact information, for example: "myemail" replaces into "lukeberrypi@gmail.com". Super handy.
 
-I had these setup for my telephone number, social security number, and much more. I was excited to migrate these into Raycast, only to see that they didn't work as expected. They break on X and WhatsApp, two of my most used websites. They also don't work on VS Code.
+Unfortunately, Raycast Snippets break on X and WhatsApp, two of my most used websites. They also [don't work on VS Code](https://x.com/LukeberryPi/status/1806094087658807370).
 
-Raycast Snippets are better than native Text Replacements for two reasons:
+For now, I will stick to the native Text Replacements.
 
-- they have an option
+### Disable Fuzzy Search for Emojis
 
-### Browser Bookmarks
+When I used [Rocket](https://matthewpalmer.net/rocket/), there was an option to enable/disable fuzzy search. This would be a great addition to Raycast Emojis exntension, as it is currently [impossible to disable it](https://x.com/LukeberryPi/status/1801228787826229632).
 
-Alfred managed to have "browser agnostic" bookmarks. This means that, regardless of where I had originally saved a bookmark, it would always open in my current default browser.
+### Browser Agnostic Bookmarks
 
-For example, if I went to Safari and bookmarked "google.com" and accessed that via Alfred, it would open "google.com" on Chrome (which is my default browser). In Raycast it would open in Safari.
+Question: if you bookmark "google.com" in Safari and Google Chrome is your default web browser, where do you expect the bookmark to open when accessing it via Raycast?
+
+Alfred opens it in Google Chrome and Raycast opens it in Safari. I much prefer the former. An "Always Open in Default Browser" toggle would be amazing.
 
 ### Escape
 
-In Raycast, "Esc" goes back
+In Raycast, "esc" goes back to the previous page. I wish I could configure this to the more universal "cmd + `[`" and "cmd + `]`", which I've grown used to. And an option for "esc" to close the entire Raycast app would be amazing.
+
+### fn as a modifier key
+
+It is impossible to setup hotkeys for Raycast using the "globe/fn" key. This would be a nice addition since using "cmd" and "ctrl" often leads to conflicting hotkeys between different apps.
+
+## Conclusion
+
+Raycast is phenomenal. Huge shout out to [@peduarte](https://x.com/peduarte) and the team for developing such an impressive, all-encompassing application.
+
+As with any Software, there are improvement points, but I wouldn't write about it to this length if I didn't love it! [Try it out yourself (MacOS only)](https://www.raycast.com/).
