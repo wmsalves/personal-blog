@@ -31,7 +31,15 @@ export const getArticles = () => {
     };
   });
 
-  return allArticlesData;
+  return allArticlesData.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1;
+    } else if (a.date > b.date) {
+      return -1;
+    } else {
+      return 0;
+    }
+  });
 };
 
 export const getArticleData = async (id: string) => {
