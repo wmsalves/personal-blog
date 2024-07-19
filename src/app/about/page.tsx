@@ -17,7 +17,8 @@ export default function AboutPage() {
         </p>
         <p>
           Thank you for visiting my website. I hope you find it informative and
-          enjoyable.
+          enjoyable. You can contact me at{" "}
+          <a href="mailto:lukeberrypi@gmail.com">lukeberrypi@gmail.com</a>.
         </p>
         <p>Luke Berry</p>
       </article>
