@@ -7,11 +7,11 @@ export default function ProjectsPage() {
       <h1>Projects</h1>
       <section>
         <article>
-          <h2>A minigame for learning TailwindCSS</h2>
-          <span>
+          <div>
+            <h2>A minigame for learning TailwindCSS</h2>
             <span className="font-bold">Made with: </span>
             Next.js, Typescript, and TailwindCSS
-          </span>
+          </div>
           <a
             href="https://css2wind.com"
             target="_blank"
@@ -80,11 +80,11 @@ export default function ProjectsPage() {
           </div>
         </article>
         <article>
-          <h2>An anti-procrastination to-do list</h2>
-          <span>
+          <div>
+            <h2>An anti-procrastination to-do list</h2>
             <span className="font-bold">Made with: </span> Vite, React and
             TailwindCSS
-          </span>
+          </div>
           <a
             href="https://phived.com"
             className="group block overflow-hidden my-6 relative ring-1 ring-zinc-900"
