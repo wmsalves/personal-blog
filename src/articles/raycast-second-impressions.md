@@ -16,11 +16,11 @@ When I first heard of Raycast. I was curious, but skeptical. I downloaded it and
 
 Even if my first experience with Raycast wasn't convincing, I definitely saw the potential. It felt slick and modern, it just didn't fit my use case.
 
-Disclaimer: I didn't take the time to configure Raycast as I had done with Alfred. In that sense, it was a bit unfair to expect Raycast's default to behave exactly as I desired.
+> Disclaimer: I didn't take the time to configure Raycast as I had done with Alfred. In that sense, it was a bit unfair to expect Raycast's default to behave exactly as I desired.
 
 Still, out-of-the-box (OOTB) behavior plays a huge role on migrating to/from a similar tool. Most users won't have the patience to configure the new tool and will give up migrating altogether.
 
-I recently decided to give Raycast a second try. Spoiler: I no longer use Alfred. In this article I will explain why I came back, what I love and what I wish would change.
+I recently decided to give Raycast a second try. **Spoiler: I no longer use Alfred.** In this article I will explain why I came back, what I love and what I wish would change.
 
 ## Why I Tried it Again
 
@@ -84,4 +84,4 @@ It is impossible to setup hotkeys for Raycast using the "globe/fn" key. This wou
 
 Raycast is phenomenal. Huge shout out to [@peduarte](https://x.com/peduarte) and the team for developing such an impressive, all-encompassing application.
 
-As with any Software, there are improvement points, but I wouldn't write about it to this length if I didn't love it! [Try it out yourself (MacOS only)](https://www.raycast.com/).
+As with any software, there are improvement points, but I wouldn't write about it to this length if I didn't love it! [Try it out yourself (MacOS only)](https://www.raycast.com/).
