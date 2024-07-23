@@ -186,9 +186,7 @@ Here is a real example I wrote:
 
 > I am trying to save a draft post whenever a user tries to close the `<CreatePost />` component and they have filled something in any form field. The problem I am running into is that I can't save a draft because there are properties in the `saveDraftSchema` that are required, but still undefined at this point. I have tried updating the schema and using `.optional()` method but I'm still receiving a `ZodError: required_error`.
 
-This is called [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging), and something magical will happen if you do this.
-
-You will either:
+This is called [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging). And something magical will happen if you do it. You will either:
 
 - Think of an alternative that you haven't tried yet
 - Think of the solution immediately
