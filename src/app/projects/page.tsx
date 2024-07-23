@@ -7,15 +7,24 @@ export default function ProjectsPage() {
       <h1>Projects</h1>
       <section>
         <article>
-          <div>
-            <h2>A minigame for learning TailwindCSS</h2>
-            <span className="font-bold">Made with: </span>
-            Next.js, Typescript, and TailwindCSS
+          <div className="mt-10 flex justify-between flex-col gap-4 md:items-center md:flex-row">
+            <h2 className="m-0">A minigame to learn TailwindCSS</h2>
+            <div className="flex items-center gap-4">
+              <div className="ring-1 ring-zinc-950 px-2 py-1">
+                TypeScript
+              </div>
+              <div className="ring-1 ring-zinc-950 px-2 py-1">
+                TailwindCSS
+              </div>
+              <div className="ring-1 ring-zinc-950 px-2 py-1">
+                Next.js
+              </div>
+            </div>
           </div>
           <a
             href="https://css2wind.com"
             target="_blank"
-            className="group block overflow-hidden my-6 relative ring-1 ring-zinc-900"
+            className="group block overflow-hidden my-6 relative ring-1 ring-zinc-950"
           >
             <span className="z-10 absolute flex items-center transition-all gap-2 top-2 right-2 opacity-0 group-hover:opacity-100 text-zinc-100">
               Click to visit website <ArrowUpRight className="size-5" />
@@ -80,14 +89,23 @@ export default function ProjectsPage() {
           </div>
         </article>
         <article>
-          <div>
-            <h2>An anti-procrastination to-do list</h2>
-            <span className="font-bold">Made with: </span> Vite, React and
-            TailwindCSS
+          <div className="mt-10 flex justify-between flex-col gap-4 md:items-center md:flex-row">
+            <h2 className="m-0">An anti-procrastination to-do list</h2>
+            <div className="flex items-center gap-4">
+              <div className="ring-1 ring-zinc-950 px-2 py-1">
+                React
+              </div>
+              <div className="ring-1 ring-zinc-950 px-2 py-1">
+                TailwindCSS
+              </div>
+              <div className="ring-1 ring-zinc-950 px-2 py-1">
+                Vite
+              </div>
+            </div>
           </div>
           <a
             href="https://phived.com"
-            className="group block overflow-hidden my-6 relative ring-1 ring-zinc-900"
+            className="group block overflow-hidden my-6 relative ring-1 ring-zinc-950"
             target="_blank"
           >
             <span className="z-10 absolute flex items-center gap-2 top-2 right-2 opacity-0 transition-all group-hover:opacity-100">
