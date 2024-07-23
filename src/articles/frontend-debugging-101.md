@@ -35,6 +35,12 @@ It is said that the more code you copy, the more experienced you are. You might 
 
 Develop the habit of searching the codebase for the methods you are trying to implement. I do this with `cmd + shift + f` on VS Code. And search for `useInfiniteQuery(`, for example.
 
+### Have you accessed the documentation? (~15 minutes)
+
+Searching the documentation may be the quickest way to solve your problem. Docs usually have definitions for methods, its parameters, what it returns, and even a "Common Errors" section that might include yours.
+
+I usually do this by looking up the `method + library` on Google. For example, `useInfiniteQuery react query`. [Here is this specific example's documentation](https://tanstack.com/query/v4/docs/framework/react/reference/useInfiniteQuery).
+
 ### Have you looked up the error? (~15 minutes)
 
 Use whatever tool you prefer for this. It can be Google, ChatGPT, Claude AI or something else. Again, even if you don't solve it right away, it will help you understand the type of error and put you in the right path towards solving it.
