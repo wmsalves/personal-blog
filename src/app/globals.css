@@ -18,7 +18,7 @@
   }
 
   article h2 {
-    @apply uppercase tracking-wide font-normal mt-12;
+    @apply uppercase tracking-wide font-normal mt-12 font-bold;
   }
 
   article p {

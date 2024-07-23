@@ -8,7 +8,7 @@ export default function ProjectsPage() {
       <section>
         <article>
           <div className="mt-10 flex justify-between flex-col gap-4 md:items-center md:flex-row">
-            <h2 className="m-0 font-bold">A minigame to learn TailwindCSS</h2>
+            <h2 className="m-0">A minigame to learn TailwindCSS</h2>
             <div className="flex items-center gap-4">
               <div className="ring-1 ring-zinc-950 px-2 py-1">
                 TypeScript
@@ -90,7 +90,7 @@ export default function ProjectsPage() {
         </article>
         <article>
           <div className="mt-10 flex justify-between flex-col gap-4 md:items-center md:flex-row">
-            <h2 className="m-0 font-bold">An anti-procrastination to-do list</h2>
+            <h2 className="m-0">An anti-procrastination to-do list</h2>
             <div className="flex items-center gap-4">
               <div className="ring-1 ring-zinc-950 px-2 py-1">
                 React
