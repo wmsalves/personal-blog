@@ -46,12 +46,12 @@
     @apply border-l-4 border-emerald-600 pl-4 my-4;
   }
 
-  article code {
-    @apply rounded ring-1 ring-zinc-950 px-1.5 py-0.5 mx-0.5 text-sm;
+  article :not(pre) > code {
+    @apply rounded ring-1 ring-zinc-950 px-1.5 py-0.5 mx-0.5 text-sm select-all text-nowrap;
   }
 
   article pre {
-    @apply bg-zinc-100 rounded p-4 my-4 overflow-x-auto;
+    @apply ring-1 ring-zinc-950 rounded p-4 my-4 overflow-x-auto text-sm;
   }
 
   header a,

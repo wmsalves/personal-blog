@@ -110,14 +110,17 @@ export default function HomePage() {
             />
           ))}
         </div>
-        <a
-          href="/luke-berry-cv.pdf"
-          download="Luke-Berry-CV.pdf"
-          className="bg-zinc-900 p-4 text-zinc-100 flex items-center gap-4 hover:bg-zinc-700 transition-all active:tranzinc-y-1"
-        >
-          Download my CV
-          <Download className="size-5" />
-        </a>
+        <div className="flex gap-2 flex-col">
+          <a
+            href="/luke-berry-cv.pdf"
+            download="Luke-Berry-CV.pdf"
+            className="bg-zinc-900 p-4 text-zinc-100 flex items-center gap-4 hover:bg-zinc-700 transition-all active:tranzinc-y-1"
+          >
+            Download my CV
+            <Download className="size-5" />
+          </a>
+          <span className="text-zinc-500">It&apos;s only one page.</span>
+        </div>
       </div>
     </div>
   );
