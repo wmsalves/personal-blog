@@ -180,7 +180,7 @@ Whenever you are back, ask yourself the following questions and **write the answ
 
 - What are you trying to do?
 - What is the problem you're running into?
-- What have you done so far?
+- What have you tried so far?
 
 Here is a real example I wrote:
 
