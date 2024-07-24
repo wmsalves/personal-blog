@@ -51,7 +51,7 @@
   }
 
   article pre {
-    @apply ring-1 ring-zinc-950 rounded p-4 my-4 overflow-x-auto text-sm;
+    @apply ring-1 ring-zinc-950 p-4 my-4 overflow-x-auto text-sm;
   }
 
   header a,
