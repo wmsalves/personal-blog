@@ -114,7 +114,7 @@ export default function ProjectsPage() {
             <Image
               className="size-full group-hover:scale-105 transition-all"
               src="/projects/phived.png"
-              width={250}
+              width={9999}
               height={250}
               alt="merchant"
             />
