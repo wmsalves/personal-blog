@@ -1,6 +1,6 @@
 ---
 title: "Frontend Debugging 101"
-date: "23-07-2024"
+date: "2024-07-23"
 ---
 
 I believe the cliché "there are no dumb questions". I even created a [website](https://possoperguntar.com.br) that is the Portuguese equivalent of [dontasktoask.com](https://dontasktoask.com). I heavily encourage asking in public and learning to formulate questions.
