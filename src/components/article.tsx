@@ -9,7 +9,7 @@ export function Article({ html }: { html: string }) {
         codes.forEach((code) => {
         if (code.innerHTML.includes("span")) return;
           const html = highlight(code.textContent as string);
-          // console.log(html)
+          
           code.innerHTML = html;
         });
         const titles = document.querySelectorAll("h2");
