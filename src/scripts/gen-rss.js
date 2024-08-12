@@ -4,10 +4,9 @@ const RSS = require('rss');
 const matter = require('gray-matter');
 const dotenv = require('dotenv');
 
-// Load environment variables from .env.local
 dotenv.config({ path: '.env.local' });
 
-console.log('SITE_URL:', process.env.SITE_URL); // Verification
+console.log('SITE_URL:', process.env.VERCEL_PROJECT_PRODUCTION_URL); 
 
 const postsDirectory = path.join(process.cwd(), 'src', 'articles');
 
@@ -30,7 +29,7 @@ function getPosts() {
 }
 
 function generateRSS() {
-  const siteUrl = process.env.SITE_URL || 'http://localhost:3000';
+  const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL || 'http://localhost:3000';
   const feedUrl = `${siteUrl}/rss.xml`;
 
   const feed = new RSS({
