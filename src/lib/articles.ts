@@ -27,7 +27,7 @@ export const getArticles = () => {
     return {
       id,
       title: matterResult.data.title,
-      date: matterResult.data.date,
+      date: moment(matterResult.data.date).format("YYYY-MM-DD"),
     };
   });
 
@@ -55,6 +55,6 @@ export const getArticleData = async (id: string) => {
     id,
     contentHtml,
     title: matterResult.data.title,
-    date: moment(matterResult.data.date, "DD-MM-YYYY").format("MMMM Do, YYYY"),
+    date: moment(matterResult.data.date, "YYYY-MM-DD").format("MMMM Do, YYYY"),
   };
 };
