@@ -1,4 +1,5 @@
 import { getArticleData } from "@/src/lib/articles";
+import { Article } from "../../../components/article";
 
 export default async function ArticlePage({
   params,
@@ -13,7 +14,7 @@ export default async function ArticlePage({
         <h1 className="font-bold">{articleData.title}</h1>
         <span className="text-zinc-700">{articleData.date}</span>
       </div>
-      <article dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
+      <Article html={articleData.contentHtml}/>
     </section>
   );
 }
