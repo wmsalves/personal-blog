@@ -104,7 +104,7 @@ Language Server Protocols (LSP) can be hard sometimes. If you are seeing uncommo
 
 I have created the habit of running the `TypeScript: Restart TS Server` command in VS Code every 15 minutes.
 
-### Have you reinstalled node_modules? (~1 minute)
+### Have you reinstalled node_modules? (∞)
 
 It is common for your `node_modules` to become corrupted. If the error looks unrelated to your changes, try it.
 
