@@ -65,7 +65,9 @@ I felt very comfortable with this since I had been studying a lot of React and R
 
 ## Technical Interview II
 
-This stage took place with an Engineering Manager and focused on my experience with developer teams. She asked what industry I have worked with, if I aspired to move into Fullstack.
+This stage took place with an Engineering Manager and focused on my experience with developer teams. She asked what industry and size of teams I had worked with and if I aspired to move into Fullstack or continue focusing solely on Frontend Development.
+
+She also asked "What was the last big technical mistake you made?". This question caught me off-guard, even though it is very common. Luckily, I make a lot of mistakes and comfortably shared the last time I had broken prod and what I did wrong.
 
 > Tip: Be prepared to talk about soft skills. Questions such as "What is a difficult professional situation and how did you overcome it?" should be rehearsed and ready.
 
@@ -74,7 +76,7 @@ This stage took place with an Engineering Manager and focused on my experience w
 After a week, I got the positive feedback from the company and a final offer: €50000/year, with some perks:
 
 - Reduced work day during August (9-4 instead of 9-5)
-- Twenty days work from anywhere per year
+- Twenty days of "work from anywhere" per year
 - Cost assistance of €1500 per year
 
 I moved onto the onboarding: documentation, signing contracts, and more.
