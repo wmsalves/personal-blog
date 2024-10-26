@@ -8,8 +8,10 @@ export default async function ArticlesPage() {
     <div className="w-full">
       <div className="flex items-center justify-between">
         <h1 className="my-12 font-bold">Articles</h1>
-        <Link href={"/rss.xml"} className="text-zinc-500">
-          <p className="underline">RSS Feed</p>
+        <Link href="/rss.xml">
+          <span className="underline underline-offset-2 decoration-2 decoration-emerald-600">
+            RSS Feed
+          </span>
         </Link>
       </div>
       <section className="flex flex-col divide-y divide-zinc-300 w-full">

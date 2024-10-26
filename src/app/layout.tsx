@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Karla } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
-// import { Sun } from "lucide-react";
 import { ScrollToTop } from "../components/scroll-to-top";
 
 export const metadata: Metadata = {
@@ -30,7 +29,6 @@ export default function RootLayout({
               Software Engineer
             </Link>
             <div className="items-center flex gap-4">
-              {/* <button><Sun className="size-5" /></button> */}
               <Link href="/">Home</Link>
               <Link href="/projects">Projects</Link>
               <Link href="/articles">Articles</Link>
