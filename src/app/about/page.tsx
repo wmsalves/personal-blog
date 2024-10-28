@@ -4,23 +4,87 @@ export default function AboutPage() {
       <h1 className="my-12 font-bold">About</h1>
       <article>
         <p>
-          I am a brazilian software engineer with a passion for creating things
-          from zero. I am currently pursuing a degree in computer science at
-          UniAmerica, Brazil.
-        </p>
-        <p>
-          In my free time I enjoy travelling, swimming, running and playing
-          music. I actually have released songs that you can check out{" "}
-          <a href="https://open.spotify.com/artist/4ymHKBTThfeOL114lwCWPQ?si=cfbe06670e1746bf">
-            on my Spotify page.
+          I was born in{" "}
+          <a href="https://en.wikipedia.org/wiki/S%C3%A3o_Paulo">São Paulo</a>{" "}
+          and moved to{" "}
+          <a href="https://en.wikipedia.org/wiki/Florian%C3%B3polis">
+            Florianópolis as a kid
           </a>
+          . I fell in love with its amazing nature and the sport & music culture
+          in the Magic Island.
         </p>
         <p>
-          Thank you for visiting my website. I hope you find it informative and
-          enjoyable. You can contact me at{" "}
+          In the next decade I{" "}
+          <a href="https://open.spotify.com/artist/4ymHKBTThfeOL114lwCWPQ?si=c30897c35e404259">
+            became a singer-songwriter
+          </a>
+          , got a Karate blue belt, won back-to-back Carnavals with a samba
+          school and wasted thousands of hours playing League of Legends.
+        </p>
+        <p>
+          I studied Economics at{" "}
+          <a href="https://en.wikipedia.org/wiki/Federal_University_of_Santa_Catarina">
+            Federal University of Santa Catarina
+          </a>
+          , which I chose for my love for History and Mathematics. I learned a
+          lot of Politics, Statistics and Macroeconomics. But Economics is a
+          field guilty of over-abstraction.
+        </p>
+        <p>
+          We would spend months studying models that were far too simplified to
+          be applicable in real-life. I felt really disconnected from my studies
+          which led to me dropping out after 2 years.
+        </p>
+        <p>
+          My first contact with programming was as a Data Analyst Intern at a
+          Big Data startup. We used Microsoft Excel and Power BI to generate our
+          reports.
+        </p>
+        <p>
+          With millions of data entries, it wasn't long until my Dell notebook
+          became unusable. This led me to learn Python, along with Pandas and
+          matplotlib to better deal, as well as a bit of Selenium for web
+          scraping and automations.
+        </p>
+        <p>
+          I had always been obsessed with user interfaces. My friends couldn't
+          bear me pointing out misplaced buttons, broken forms and ugly websites
+          all the time.
+        </p>
+        <p>
+          When I found out what the underlying technologies where, I did a deep
+          dive into Frontend Development. I completed FreeCodeCamp's{" "}
+          <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">
+            Responsive Web Design
+          </a>{" "}
+          and swiftly progressed to Javascript, and later, React.
+        </p>
+        <p>
+          I became more active within the Brazilian Dev community, cataloguing
+          UI bugs with{" "}
+          <a href="https://x.com/search?q=%23berryux&src=typed_query&f=live">
+            #berryux
+          </a>{" "}
+          and building <a href="https://phived.com">phived</a> and{" "}
+          <a href="https://css2wind.com">css2wind</a>. I learned more about Open
+          Source and building in public, often iterating over features with
+          fellow developers.
+        </p>
+        <p>
+          In 2024, I travelled to Torino, Italy to visit my dad. My life flipped
+          upside down and I ended up living in Málaga, Spain for a while. After
+          I{" "}
+          <a href="/articles/how-not-to-get-a-job-in-spain">
+            failed to get a job
+          </a>
+          , I moved to the UK and landed a job in Bath, where I currently live.
+        </p>
+        <p>
+          If you want to get in touch, send me a DM on{" "}
+          <a href="https://x.com/lukeberrypi">X</a> or an email{" "}
           <a href="mailto:lukeberrypi@gmail.com">lukeberrypi@gmail.com</a>.
         </p>
-        <p>Luke Berry</p>
+        <p>Thank you for reading and have an excellent rest of your day!</p>
       </article>
     </>
   );

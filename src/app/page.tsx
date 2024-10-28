@@ -72,7 +72,7 @@ const InternalLink = (link: Link) => {
   return (
     <Link className="group flex items-center gap-2" href={link.url}>
       {link.description}
-      <ArrowRight className="size-5 group-hover:tranzinc-x-1 transition-all" />
+      <ArrowRight className="size-5 group-hover:translate-x-1 transition-all" />
     </Link>
   );
 };
@@ -88,7 +88,7 @@ export default function HomePage() {
           Icon={link.Icon}
         />
       ))}
-      <div className="flex justify-between items-start">
+      <div className="flex justify-center sm:justify-between flex-col sm:flex-row items-center max-sm:gap-8">
         <div className="flex flex-col gap-4">
           {internalLinks.map((link: Link) => (
             <InternalLink
@@ -102,12 +102,12 @@ export default function HomePage() {
           <a
             href="/luke-berry-cv.pdf"
             download="Luke-Berry-CV.pdf"
-            className="bg-zinc-950 p-4 text-zinc-100 flex items-center gap-4 hover:bg-zinc-700 transition-all active:tranzinc-y-1"
+            className="bg-zinc-950 p-4 text-zinc-100 flex flex-col sm:flex-row items-center gap-4 hover:bg-zinc-700 transition-all active:tranzinc-y-1"
           >
-            Download my CV
-            <Download className="size-5" />
+            <span className="text-nowrap">Download my CV</span>
+            <Download className="size-5 max-sm:hidden" />
           </a>
-          <span className="text-zinc-500">It&apos;s only one page.</span>
+          <span className="text-zinc-500 max-sm:text-center">It&apos;s only one page.</span>
         </div>
       </div>
     </div>

@@ -23,8 +23,11 @@ export default function RootLayout({
     <html lang="en" className="min-h-screen">
       <body className={`${karla.className} min-h-full p-4`}>
         <header className="max-w-prose mx-auto mb-8">
-          <nav className="flex items-center justify-between">
-            <Link className="flex flex-col no-underline" href="/">
+          <nav className="flex items-center flex-col justify-between sm:flex-row max-sm:gap-4">
+            <Link
+              className="flex flex-col no-underline text-center sm:text-left  "
+              href="/"
+            >
               <span className="font-bold">LukeberryPi</span>
               Software Engineer
             </Link>
@@ -36,7 +39,10 @@ export default function RootLayout({
             </div>
           </nav>
         </header>
-        <main className="mx-auto max-w-prose">{children}<ScrollToTop /></main>
+        <main className="mx-auto max-w-prose">
+          {children}
+          <ScrollToTop />
+        </main>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ export default function ProjectsPage() {
       <h1>Projects</h1>
       <section>
         <article>
-          <div className="mt-10 flex justify-between flex-col gap-4 md:items-center md:flex-row">
+          <div className="mt-10 flex justify-between flex-col gap-4 sm:items-center sm:flex-row">
             <h2 className="m-0">A minigame to learn TailwindCSS</h2>
             <div className="flex items-center gap-4">
               <div className="ring-1 ring-zinc-950 px-2 py-1">TypeScript</div>
@@ -83,7 +83,7 @@ export default function ProjectsPage() {
           </div>
         </article>
         <article>
-          <div className="mt-10 flex justify-between flex-col gap-4 md:items-center md:flex-row">
+          <div className="mt-10 flex justify-between flex-col gap-4 sm:items-center sm:flex-row">
             <h2 className="m-0">An anti-procrastination to-do list</h2>
             <div className="flex items-center gap-4">
               <div className="ring-1 ring-zinc-950 px-2 py-1">React</div>
