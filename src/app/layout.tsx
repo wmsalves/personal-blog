@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="min-h-screen">
-      <body className={`${karla.className} min-h-full p-4`}>
+      <body className={`${karla.className} min-h-full px-4 py-10`}>
         <header className="max-w-prose mx-auto mb-8">
           <nav className="flex items-center flex-col justify-between sm:flex-row max-sm:gap-4">
             <Link
@@ -43,6 +43,23 @@ export default function RootLayout({
           {children}
           <ScrollToTop />
         </main>
+        <footer className="max-w-prose mx-auto flex gap-4 justify-center mt-12">
+          <a
+            href="https://github.com/LukeberryPi/blog"
+            className=" underline underline-offset-2 decoration-2 decoration-emerald-600"
+          >
+            Code
+          </a>
+          <span>|</span>
+          <Link
+            href="/rss.xml"
+            className=" underline underline-offset-2 decoration-2 decoration-emerald-600"
+          >
+            RSS Feed
+          </Link>
+          <span>|</span>
+          <span>Made by LukeberryPi</span>
+        </footer>
       </body>
     </html>
   );

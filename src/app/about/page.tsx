@@ -8,10 +8,10 @@ export default function AboutPage() {
           <a href="https://en.wikipedia.org/wiki/S%C3%A3o_Paulo">São Paulo</a>{" "}
           and moved to{" "}
           <a href="https://en.wikipedia.org/wiki/Florian%C3%B3polis">
-            Florianópolis as a kid
-          </a>
-          . I fell in love with its amazing nature and the sport & music culture
-          in the Magic Island.
+            Florianópolis
+          </a>{" "}
+          as a kid. I fell in love with its amazing nature, sport and music of
+          the Magic Island.
         </p>
         <p>
           In the next decade I{" "}
