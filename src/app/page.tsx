@@ -88,7 +88,7 @@ export default function HomePage() {
           Icon={link.Icon}
         />
       ))}
-      <div className="flex justify-center sm:justify-between flex-col sm:flex-row items-center max-sm:gap-8">
+      <div className="flex justify-center sm:justify-between flex-col sm:flex-row max-sm:gap-8">
         <div className="flex flex-col gap-4">
           {internalLinks.map((link: Link) => (
             <InternalLink
