@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function ProjectsPage() {
   return (
     <>
-      <h1>Projects</h1>
-      <section>
+      <h1 className="font-bold my-12 max-sm:text-center">Projects</h1>
+      <section className="space-y-16">
         <article>
           <div className="mt-10 flex justify-between flex-col gap-4 sm:items-center sm:flex-row">
             <h2 className="m-0">A minigame to learn TailwindCSS</h2>
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
               src="/projects/css2wind.png"
               width={9999}
               height={250}
-              alt="merchant"
+              alt="Logo for the css2wind website"
             />
           </a>
           <p>
@@ -56,11 +56,6 @@ export default function ProjectsPage() {
               page that addresses common beginner questions about TailwindCSS.
               It also exposes misconceptions about the framework, such as
               recurring comparisons to Bootstrap.
-            </li>
-            <li>
-              <span className="font-bold">Tutorial:</span> a page with a
-              comprehensive, step-by-step guide that teaches the user how to
-              play the minigame.
             </li>
           </ul>
           <div className="items-center flex gap-4">
@@ -104,7 +99,7 @@ export default function ProjectsPage() {
               src="/projects/phived.png"
               width={9999}
               height={250}
-              alt="merchant"
+              alt="Logo for the phived website"
             />
           </a>
           <p>

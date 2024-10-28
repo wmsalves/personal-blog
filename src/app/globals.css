@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
@@ -16,6 +17,10 @@
   html,
   body {
     @apply bg-zinc-50 text-zinc-950;
+  }
+
+  article {
+    @apply mb-12
   }
 
   article > h1,

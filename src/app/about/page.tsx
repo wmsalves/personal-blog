@@ -1,7 +1,7 @@
 export default function AboutPage() {
   return (
     <>
-      <h1 className="my-12 font-bold">About</h1>
+      <h1 className="my-12 font-bold max-sm:text-center">About</h1>
       <article>
         <p>
           I was born in{" "}
@@ -41,15 +41,15 @@ export default function AboutPage() {
           reports.
         </p>
         <p>
-          With millions of data entries, it wasn&apos;t long until my Dell notebook
-          became unusable. This led me to learn Python, along with Pandas and
-          matplotlib to better deal, as well as a bit of Selenium for web
-          scraping and automations.
+          With millions of data entries, it wasn&apos;t long until my Dell
+          notebook became unusable. This led me to learn Python, along with
+          Pandas and matplotlib to better deal, as well as a bit of Selenium for
+          web scraping and automations.
         </p>
         <p>
-          I had always been obsessed with user interfaces. My friends couldn&apos;t
-          bear me pointing out misplaced buttons, broken forms and ugly websites
-          all the time.
+          I had always been obsessed with user interfaces. My friends
+          couldn&apos;t bear me pointing out misplaced buttons, broken forms and
+          ugly websites all the time.
         </p>
         <p>
           When I found out what the underlying technologies where, I did a deep
