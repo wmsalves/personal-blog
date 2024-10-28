@@ -41,19 +41,19 @@ export default function AboutPage() {
           reports.
         </p>
         <p>
-          With millions of data entries, it wasn't long until my Dell notebook
+          With millions of data entries, it wasn&apos;t long until my Dell notebook
           became unusable. This led me to learn Python, along with Pandas and
           matplotlib to better deal, as well as a bit of Selenium for web
           scraping and automations.
         </p>
         <p>
-          I had always been obsessed with user interfaces. My friends couldn't
+          I had always been obsessed with user interfaces. My friends couldn&apos;t
           bear me pointing out misplaced buttons, broken forms and ugly websites
           all the time.
         </p>
         <p>
           When I found out what the underlying technologies where, I did a deep
-          dive into Frontend Development. I completed FreeCodeCamp's{" "}
+          dive into Frontend Development. I completed FreeCodeCamp&apos;s{" "}
           <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">
             Responsive Web Design
           </a>{" "}
