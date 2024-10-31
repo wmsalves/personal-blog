@@ -33,7 +33,7 @@
   }
 
   article h2 {
-    @apply uppercase tracking-wide font-normal mt-12 font-bold;
+    @apply uppercase mt-12 font-bold;
   }
 
   article p {
