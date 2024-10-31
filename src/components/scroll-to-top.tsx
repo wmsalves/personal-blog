@@ -28,11 +28,11 @@ export const ScrollToTop = () => {
     <button
       style={{
         position: "fixed",
-        bottom: 16,
-        right: 16,
+        bottom: 24,
+        right: 24,
         zIndex: 100,
         backgroundColor: "#fafafa",
-        border: "1px solid #18181b",
+        outline: "1px solid #18181b",
         padding: 12,
       }}
       onClick={() => {

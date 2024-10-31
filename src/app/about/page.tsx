@@ -1,7 +1,7 @@
 export default function AboutPage() {
   return (
     <>
-      <h1 className="my-12 font-bold max-sm:text-center">About</h1>
+      <h1 className="my-12 font-bold max-sm:text-center">About me</h1>
       <article>
         <p>
           I was born in{" "}
@@ -10,11 +10,11 @@ export default function AboutPage() {
           <a href="https://en.wikipedia.org/wiki/Florian%C3%B3polis">
             Florianópolis
           </a>{" "}
-          as a kid. I fell in love with its amazing nature, sport and music of
+          as a kid. I fell in love with the amazing nature, sport and music of
           the Magic Island.
         </p>
         <p>
-          In the next decade I{" "}
+          In the next decade, I{" "}
           <a href="https://open.spotify.com/artist/4ymHKBTThfeOL114lwCWPQ?si=c30897c35e404259">
             became a singer-songwriter
           </a>
@@ -43,8 +43,7 @@ export default function AboutPage() {
         <p>
           With millions of data entries, it wasn&apos;t long until my Dell
           notebook became unusable. This led me to learn Python, along with
-          Pandas and matplotlib to better deal, as well as a bit of Selenium for
-          web scraping and automations.
+          Pandas and matplotlib, as well as Selenium for some web scraping.
         </p>
         <p>
           I had always been obsessed with user interfaces. My friends
@@ -67,8 +66,8 @@ export default function AboutPage() {
           </a>{" "}
           and building <a href="https://phived.com">phived</a> and{" "}
           <a href="https://css2wind.com">css2wind</a>. I learned more about Open
-          Source and building in public, often iterating over features with
-          fellow developers.
+          Source and building in public, often building features with other
+          developers.
         </p>
         <p>
           In 2024, I travelled to Torino, Italy to visit my dad. My life flipped

@@ -3,6 +3,7 @@ import { Karla } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
+import Header from "./Header";
 
 export const metadata: Metadata = {
   title: "LukeberryPi's Blog",
@@ -21,44 +22,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="min-h-screen">
-      <body className={`${karla.className} min-h-full px-4 py-10`}>
-        <header className="max-w-prose mx-auto mb-8">
-          <nav className="flex items-center flex-col justify-between sm:flex-row max-sm:gap-4">
-            <Link
-              className="flex flex-col no-underline text-center sm:text-left  "
-              href="/"
-            >
-              <span className="font-bold">LukeberryPi</span>
-              Software Engineer
-            </Link>
-            <div className="items-center flex gap-4">
-              <Link href="/">Home</Link>
-              <Link href="/projects">Projects</Link>
-              <Link href="/articles">Articles</Link>
-              <Link href="/about">About</Link>
-            </div>
-          </nav>
-        </header>
+      <body className={`${karla.className} min-h-full px-6 py-10`}>
+        <Header />
         <main className="mx-auto max-w-prose">
           {children}
           <ScrollToTop />
         </main>
-        <footer className="max-w-prose mx-auto flex gap-4 justify-center mt-12">
-          <a
-            href="https://github.com/LukeberryPi/blog"
-            className=" underline underline-offset-2 decoration-2 decoration-emerald-600"
-          >
+        <footer className="max-w-prose mx-auto flex gap-6 justify-center mt-12">
+          <a href="https://github.com/LukeberryPi/blog" target="_blank">
             Code
           </a>
-          <span>|</span>
-          <Link
-            href="/rss.xml"
-            className=" underline underline-offset-2 decoration-2 decoration-emerald-600"
-          >
-            RSS Feed
-          </Link>
-          <span>|</span>
-          <span>Made by LukeberryPi</span>
+          <Link href="/rss.xml">RSS Feed</Link>
+          <a href="https://x.com/LukeberryPi" target="_blank">
+            Made by LukeberryPi
+          </a>
         </footer>
       </body>
     </html>

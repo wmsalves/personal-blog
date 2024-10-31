@@ -42,7 +42,7 @@
 
   article ul,
   article ol {
-    @apply text-zinc-700 my-4 pl-8;
+    @apply text-zinc-700 pl-8 my-4;
   }
 
   article li {
@@ -69,7 +69,6 @@
     @apply ring-1 ring-zinc-950 p-4 my-4 overflow-x-auto text-sm;
   }
 
-  header a,
   article a {
     @apply underline underline-offset-2 decoration-2 decoration-emerald-600;
   }

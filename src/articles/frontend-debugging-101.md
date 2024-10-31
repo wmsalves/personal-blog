@@ -7,7 +7,7 @@ I believe the cliché "there are no dumb questions". I even created a [website](
 
 However, solving your own problems in software is the unlock for progress. The more you do it, the more errors you instantly recognize and the faster you will move.
 
-In my first programming job, I would often call colleagues in despair with errors in my code, only for them to solve it in seconds. Even though my questions weren't "dumb" _per se_, I felt silly since the solution was that simple.
+In my first programming job, I would often call colleagues in despair with errors in my code, only for them to solve it in seconds. Even though my questions weren't "dumb" _per se_, the solution was often trivial.
 
 If you're a beginner, you will face these situations a lot. It is completely natural,  and more experienced people won't mind. As long as you learn from your mistakes and don't repeat them.
 
@@ -195,7 +195,7 @@ Here is a real example I wrote:
 This is called [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging). And something magical will happen if you do it. You will either:
 
 - Think of an alternative that you haven't tried yet
-- Think of the solution immediately
+- Find the solution immediately
 
 If it doesn't happen...
 
