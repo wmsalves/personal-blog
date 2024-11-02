@@ -4,9 +4,7 @@ export default function AboutPage() {
       <h1 className="my-12 font-bold max-sm:text-center">About me</h1>
       <article>
         <p>
-          I was born in{" "}
-          <a href="https://en.wikipedia.org/wiki/S%C3%A3o_Paulo">São Paulo</a>{" "}
-          and moved to{" "}
+          I was born in São Paulo and moved to{" "}
           <a href="https://en.wikipedia.org/wiki/Florian%C3%B3polis">
             Florianópolis
           </a>{" "}
@@ -84,6 +82,11 @@ export default function AboutPage() {
           <a href="mailto:lukeberrypi@gmail.com">lukeberrypi@gmail.com</a>.
         </p>
         <p>Thank you for reading and have an excellent rest of your day!</p>
+        <p>
+          Best,
+          <br />
+          Luke
+        </p>
       </article>
     </>
   );

@@ -25,9 +25,27 @@ export default function Header() {
           </div>
         </Link>
         <div className="items-center flex gap-6">
-          <Link href="/projects">/projects</Link>
-          <Link href="/articles">/articles</Link>
-          <Link href="/about">/about</Link>
+          <Link className="relative" href="/projects">
+            /projects
+            <div
+              data-is-current-path={path === "/projects"}
+              className="hidden data-[is-current-path=true]:block size-1 bg-emerald-600 absolute rounded-full left-1/2"
+            />
+          </Link>
+          <Link className="relative" href="/articles">
+            /articles
+            <div
+              data-is-current-path={path === "/articles"}
+              className="hidden size-1 data-[is-current-path=true]:block bg-emerald-600 absolute rounded-full left-1/2"
+            />
+          </Link>
+          <Link className="relative" href="/about">
+            /about
+            <div
+              data-is-current-path={path === "/about"}
+              className="hidden size-1 data-[is-current-path=true]:block bg-emerald-600 absolute rounded-full left-1/2"
+            />
+          </Link>
         </div>
       </nav>
     </header>
