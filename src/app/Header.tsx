@@ -21,7 +21,7 @@ export default function Header() {
           />
           <div className="flex flex-col">
             <span className="font-bold">LukeberryPi</span>
-            <span>Software Developer</span>
+            <span className="text-zinc-500">Software Developer</span>
           </div>
         </Link>
         <div className="items-center flex gap-6">

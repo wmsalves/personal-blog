@@ -12,7 +12,7 @@ export default async function ArticlePage({
     <section>
       <div className="flex flex-col my-12">
         <h1 className="font-bold">{articleData.title}</h1>
-        <span className="text-zinc-700">{articleData.date}</span>
+        <span className="text-zinc-500">{articleData.date}</span>
       </div>
       <Article html={articleData.contentHtml}/>
     </section>
