@@ -35,7 +35,7 @@ export default function Header() {
           <Link className="relative" href="/articles">
             /articles
             <div
-              data-is-current-path={path === "/articles"}
+              data-is-current-path={path.startsWith("/articles")}
               className="hidden size-1 data-[is-current-path=true]:block bg-emerald-600 absolute rounded-full left-1/2"
             />
           </Link>

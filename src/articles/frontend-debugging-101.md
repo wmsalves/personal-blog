@@ -33,7 +33,7 @@ My favorite means to do this is X (formerly Twitter). Here is an example of [how
 
 It is said that the more code you copy, the more experienced you are. You might be attempting to write code that is very similar to other code in the same repository.
 
-Develop the habit of searching the codebase for the methods you are trying to implement. I do this with `cmd + shift + f` on VS Code. And search for `useInfiniteQuery(`, for example.
+Develop the habit of searching the codebase for the methods you are trying to implement. I do this with `cmd + shift + f` on VS Code. And search for `useInfiniteQuery()`, for example.
 
 ### Have you accessed the documentation? (~15 minutes)
 
