@@ -40,8 +40,9 @@ export default function AboutPage() {
         </p>
         <p>
           With millions of data entries, it wasn&apos;t long until my Dell
-          notebook became unusable. This led me to learn Python, along with
-          Pandas and matplotlib, as well as Selenium for some web scraping.
+          notebook became unusable. This led me to learn Python, Pandas and
+          Matplotlib to better deal with datasets. I also learned Selenium and
+          pyautogui.
         </p>
         <p>
           I had always been obsessed with user interfaces. My friends

@@ -59,7 +59,7 @@
   }
 
   article blockquote {
-    @apply border-l-2 border-emerald-600 dark:border-sky-600 pl-4 my-4;
+    @apply border-l-4 border-emerald-600 dark:border-sky-600 pl-4 my-4;
   }
 
   article :not(pre) > code {
@@ -71,7 +71,7 @@
   }
 
   article a {
-    @apply underline underline-offset-2 decoration-emerald-600 dark:decoration-sky-600;
+    @apply underline underline-offset-2 decoration-emerald-600 dark:decoration-sky-600 font-bold;
   }
 
   button,
