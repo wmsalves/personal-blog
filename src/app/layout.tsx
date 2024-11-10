@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
 import Header from "./Header";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "LukeberryPi's Blog",
@@ -23,12 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en" className="min-h-screen">
       <body className={`${karla.className} min-h-full px-6 py-10`}>
+        <Script id="theme-toggle" strategy="afterInteractive">
+          {`document.documentElement.classList.toggle("dark", localStorage.theme ===
+        "dark" || (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches))`}
+        </Script>
         <Header />
         <main className="mx-auto max-w-prose">
           {children}
           <ScrollToTop />
         </main>
-        <footer className="max-w-prose mx-auto flex gap-6 justify-center mt-12 text-zinc-500">
+        <footer className="max-w-prose mx-auto flex gap-6 justify-center mt-12 text-zinc-500 dark:text-zinc-400">
           <a href="https://github.com/LukeberryPi/blog" target="_blank">
             Code
           </a>

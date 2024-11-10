@@ -26,20 +26,8 @@ export const ScrollToTop = () => {
 
   return (
     <button
-      style={{
-        position: "fixed",
-        bottom: 24,
-        right: 24,
-        zIndex: 100,
-        backgroundColor: "#fafafa",
-        outline: "1px solid #18181b",
-        padding: 12,
-      }}
-      onClick={() => {
-        window.scrollTo({
-          top: 0,
-        });
-      }}
+      onClick={() => window.scrollTo({ top: 0 })}
+      className="fixed z-10 right-8 bottom-8 p-2 bg-zinc-50 dark:bg-zinc-900 ring-zinc-950 dark:ring-zinc-300 ring-1"
     >
       <ArrowUp className="size-5" />
     </button>

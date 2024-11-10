@@ -10,9 +10,9 @@ export default function ProjectsPage() {
           <div className="mt-10 flex justify-between flex-col gap-4 sm:items-center sm:flex-row">
             <h2 className="m-0 normal-case">A minigame to learn TailwindCSS</h2>
             <div className="flex items-center gap-4">
-              <div className="ring-1 ring-zinc-950 px-2 py-1">TypeScript</div>
-              <div className="ring-1 ring-zinc-950 px-2 py-1">TailwindCSS</div>
-              <div className="ring-1 ring-zinc-950 px-2 py-1">Next.js</div>
+              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">TypeScript</div>
+              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">TailwindCSS</div>
+              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">Next.js</div>
             </div>
           </div>
           <a
@@ -83,9 +83,9 @@ export default function ProjectsPage() {
               An anti-procrastination to-do list
             </h2>
             <div className="flex items-center gap-4">
-              <div className="ring-1 ring-zinc-950 px-2 py-1">React</div>
-              <div className="ring-1 ring-zinc-950 px-2 py-1">TailwindCSS</div>
-              <div className="ring-1 ring-zinc-950 px-2 py-1">Vite</div>
+              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">React</div>
+              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">TailwindCSS</div>
+              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">Vite</div>
             </div>
           </div>
           <a
@@ -93,7 +93,7 @@ export default function ProjectsPage() {
             className="group block overflow-hidden my-6 relative ring-1 ring-zinc-950"
             target="_blank"
           >
-            <span className="z-10 absolute flex items-center gap-2 top-2 right-2 opacity-0 transition-all group-hover:opacity-100">
+            <span className="z-10 absolute flex items-center gap-2 top-2 right-2 opacity-0 transition-all dark:text-zinc-950 group-hover:opacity-100">
               Click to visit website <ArrowUpRight className="size-5" />
             </span>
             <Image
