@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 function isThemeSetToDark() {
-  if (!window) return;
+  if (window == undefined) return;
 
   return (
     localStorage.theme === "dark" ||
