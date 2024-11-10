@@ -16,6 +16,7 @@ const karla = Karla({
   weight: ["400", "700"],
 });
 
+// https://www.reddit.com/r/nextjs/comments/1bhfikg/comment/kxwj9ou/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 const Header = dynamic(() => import("./Header"), { ssr: false });
 
 export default function RootLayout({
