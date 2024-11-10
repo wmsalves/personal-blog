@@ -3,31 +3,14 @@
 @tailwind utilities;
 
 :root {
-  /* Darker blue - better on light bg */
   --sh-class: #0f7dd6;
-
-  /* Deeper purple */
   --sh-identifier: #9333ea;
-
-  /* Darker neutral */
   --sh-sign: #71717a;
-
-  /* Deeper blue */
   --sh-property: #2563eb;
-
-  /* Darker teal */
   --sh-entity: #0d9488;
-
-  /* Deeper purple */
   --sh-jsxliterals: #7c3aed;
-
-  /* Darker cyan */
   --sh-string: #0891b2;
-
-  /* Deeper red */
   --sh-keyword: #dc2626;
-
-  /* Darker gray */
   --sh-comment: #64748b;
 }
 
