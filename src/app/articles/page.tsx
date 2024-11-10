@@ -8,7 +8,7 @@ export default async function ArticlesPage() {
     <div className="w-full">
       <h1 className="my-12 font-bold max-sm:text-center">Articles</h1>
 
-      <section className="flex flex-col divide-y divide-zinc-400 dark:divide-zinc-700 w-full">
+      <section className="flex flex-col divide-y divide-zinc-300 dark:divide-zinc-700 w-full">
         {articles.map((article: Article) => (
           <Link
             className="flex sm:items-center flex-col sm:flex-row justify-between w-full py-4 px-2 hover:bg-zinc-200 dark:hover:bg-zinc-800"
