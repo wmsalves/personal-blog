@@ -47,8 +47,11 @@ export default function Header() {
           className="relative flex no-underline items-center max-sm:text-center"
           href="/"
         >
-          <div className="w-12 h-full flex items-center absolute -left-9 size-5 data-[is-home=true]:hidden">
-            <ChevronLeft data-is-home={isHome} />
+          <div
+            data-is-home={isHome}
+            className="w-12 h-full flex items-center absolute -left-9 size-5 data-[is-home=true]:hidden"
+          >
+            <ChevronLeft />
           </div>
           <div className="flex w-full flex-col">
             <span className="font-bold">LukeberryPi</span>
