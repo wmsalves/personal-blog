@@ -120,7 +120,7 @@ export default function ProjectsPage() {
               solve 5 chess puzzles.
             </li>
             <li>
-              <span className="font-bold">Progessive Web App (PWA): </span>
+              <span className="font-bold">Progressive Web App (PWA): </span>
               download phived on any mobile device for free, so that you can
               access your tasks from any device.
             </li>
