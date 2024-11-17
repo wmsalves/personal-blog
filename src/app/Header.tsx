@@ -49,7 +49,7 @@ export default function Header() {
         >
           <div
             data-is-home={isHome}
-            className="w-12 h-full flex items-center absolute -left-9 size-5 data-[is-home=true]:hidden"
+            className="w-12 h-full flex items-center absolute -left-12 px-2 size-5 data-[is-home=true]:hidden"
           >
             <ChevronLeft />
           </div>
