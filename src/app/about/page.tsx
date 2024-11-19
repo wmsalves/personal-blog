@@ -69,7 +69,7 @@ export default function AboutPage() {
           developers.
         </p>
         <p>
-          In 2024, I travelled to Torino, Italy to visit my dad. My life flipped
+          In 2024, I traveled to Torino, Italy to visit my dad. My life flipped
           upside down and I ended up living in Málaga, Spain for a while. After
           I{" "}
           <a href="/articles/how-not-to-get-a-job-in-spain">
