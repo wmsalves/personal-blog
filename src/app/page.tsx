@@ -22,7 +22,12 @@ const XLogo = () => {
 
 const RaycastLogo = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={26} fill="none" viewBox="0 0 48 48">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={26}
+      fill="none"
+      viewBox="0 0 48 48"
+    >
       <path
         className="fill-zinc-950 dark:fill-zinc-200"
         fillRule="evenodd"
@@ -73,7 +78,7 @@ const externalLinks: Link[] = [
   },
   {
     description: "Bluesky",
-    url: "https://bsky.app/profile/lukeberrypi.bsky.social",
+    url: "https://bsky.app/profile/lukeberrypi.com",
     icon: <BskyLogo />,
   },
   {
