@@ -14,7 +14,7 @@ export default async function ArticlePage({
         <h1 className="font-bold">{articleData.title}</h1>
         <span className="text-zinc-500">{articleData.date}</span>
       </div>
-      <Article html={articleData.contentHtml}/>
+      <Article html={articleData.contentHtml} />
     </section>
   );
 }

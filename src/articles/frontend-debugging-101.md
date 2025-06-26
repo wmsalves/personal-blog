@@ -9,7 +9,7 @@ However, solving your own problems in software is the unlock for progress. The m
 
 In my first programming job, I would often call colleagues in despair with errors in my code, only for them to solve it in seconds. Even though my questions weren't "dumb" _per se_, the solution was often trivial.
 
-If you're a beginner, you will face these situations a lot. It is completely natural,  and more experienced people won't mind. As long as you learn from your mistakes and don't repeat them.
+If you're a beginner, you will face these situations a lot. It is completely natural, and more experienced people won't mind. As long as you learn from your mistakes and don't repeat them.
 
 Here is a list of steps I take before asking other people for help. It will range from very simple to medium-effort steps for debugging. I also added my usual time spent with each step.
 
