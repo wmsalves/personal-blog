@@ -76,11 +76,11 @@ const externalLinks: Link[] = [
     url: "https://youtube.com/@LukeberryPi",
     icon: <SiYoutube />,
   },
-  {
-    description: "Bluesky",
-    url: "https://bsky.app/profile/lukeberrypi.com",
-    icon: <BskyLogo />,
-  },
+  // {
+  //   description: "Bluesky",
+  //   url: "https://bsky.app/profile/lukeberrypi.com",
+  //   icon: <BskyLogo />,
+  // },
   {
     description: "X (formerly Twitter)",
     url: "https://x.com/LukeberryPi",
