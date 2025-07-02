@@ -41,15 +41,15 @@ export default function Header() {
   };
 
   return (
-    <header className="max-w-prose mx-auto mb-8">
-      <nav className="flex items-center flex-col justify-between sm:flex-row max-sm:gap-6">
+    <header className="mx-auto mb-8 max-w-prose">
+      <nav className="flex flex-col items-center justify-between max-sm:gap-6 sm:flex-row">
         <Link
-          className="relative flex no-underline items-center max-sm:text-center"
+          className="relative flex items-center no-underline max-sm:text-center"
           href="/"
         >
           <div
             data-is-home={isHome}
-            className="w-12 h-full flex items-center absolute -left-12 px-2 size-5 data-[is-home=true]:hidden"
+            className="absolute -left-12 flex size-5 h-full w-12 items-center px-2 data-[is-home=true]:hidden"
           >
             <ChevronLeft />
           </div>
@@ -60,7 +60,7 @@ export default function Header() {
             </span>
           </div>
         </Link>
-        <div className="items-center flex gap-6">
+        <div className="flex items-center gap-6">
           <button
             onClick={() => toggleTheme()}
             className="group relative flex items-center"
@@ -75,21 +75,21 @@ export default function Header() {
             /projects
             <div
               data-is-current-path={path === "/projects"}
-              className="hidden data-[is-current-path=true]:block size-[5px] bg-emerald-600 dark:bg-sky-500 absolute rounded-full left-1/2"
+              className="absolute left-1/2 hidden size-[5px] rounded-full bg-emerald-600 data-[is-current-path=true]:block dark:bg-sky-500"
             />
           </Link>
           <Link className="relative" href="/articles">
             /articles
             <div
               data-is-current-path={path.startsWith("/articles")}
-              className="hidden size-[5px] data-[is-current-path=true]:block bg-emerald-600 dark:bg-sky-500 absolute rounded-full left-1/2"
+              className="absolute left-1/2 hidden size-[5px] rounded-full bg-emerald-600 data-[is-current-path=true]:block dark:bg-sky-500"
             />
           </Link>
           <Link className="relative" href="/about">
             /about
             <div
               data-is-current-path={path === "/about"}
-              className="hidden size-[5px] data-[is-current-path=true]:block bg-emerald-600 dark:bg-sky-500 absolute rounded-full left-1/2"
+              className="absolute left-1/2 hidden size-[5px] rounded-full bg-emerald-600 data-[is-current-path=true]:block dark:bg-sky-500"
             />
           </Link>
         </div>

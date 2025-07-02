@@ -6,12 +6,12 @@ export default async function ArticlesPage() {
   const articles = getArticles();
   return (
     <div className="w-full">
-      <h1 className="my-12 font-bold max-sm:text-center">Articles</h1>
+      <h1 className="my-12 text-center text-4xl font-bold">Articles</h1>
 
-      <section className="flex flex-col divide-y divide-zinc-300 dark:divide-zinc-700 w-full">
+      <section className="flex w-full flex-col divide-y divide-zinc-300 dark:divide-neutral-700">
         {articles.map((article: Article) => (
           <Link
-            className="flex sm:items-center flex-col sm:flex-row justify-between w-full py-4 px-2 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            className="flex w-full flex-col justify-between px-2 py-4 hover:bg-zinc-200 sm:flex-row sm:items-center dark:hover:bg-zinc-800"
             key={article.id}
             href={`/articles/${article.id}`}
           >

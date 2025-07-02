@@ -4,19 +4,19 @@ import Image from "next/image";
 export default function ProjectsPage() {
   return (
     <>
-      <h1 className="font-bold my-12 max-sm:text-center">Projects</h1>
+      <h1 className="my-12 text-center text-4xl font-bold">Projects</h1>
       <section className="space-y-16">
         <article>
-          <div className="mt-10 flex justify-between flex-col gap-4 sm:items-center sm:flex-row">
+          <div className="mt-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
             <h2 className="m-0 normal-case">A minigame to learn TailwindCSS</h2>
             <div className="flex items-center gap-4">
-              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">
+              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
                 TypeScript
               </div>
-              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">
+              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
                 TailwindCSS
               </div>
-              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">
+              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
                 Next.js
               </div>
             </div>
@@ -24,13 +24,13 @@ export default function ProjectsPage() {
           <a
             href="https://css2wind.com"
             target="_blank"
-            className="group block overflow-hidden my-6 relative ring-1 ring-zinc-950"
+            className="group relative my-6 block overflow-hidden ring-1 ring-zinc-950"
           >
-            <span className="z-10 absolute flex items-center transition-all gap-2 top-2 right-2 opacity-0 group-hover:opacity-100 text-zinc-100">
+            <span className="absolute right-2 top-2 z-10 flex items-center gap-2 text-zinc-100 opacity-0 transition-all group-hover:opacity-100">
               Click to visit website <ArrowUpRight className="size-5" />
             </span>
             <Image
-              className="size-full group-hover:scale-105 transition-all"
+              className="size-full transition-all group-hover:scale-105"
               src="/projects/css2wind.png"
               width={9999}
               height={250}
@@ -40,7 +40,8 @@ export default function ProjectsPage() {
           <p>
             A website to teach people what TailwindCSS is and isn&apos;t. The
             main feature is a minigame: there are eight CSS properties that you
-            must translate to the equivalent TailwindCSS utility. It also has:{" "}
+            must translate to the equivalent TailwindCSS utility. It also
+            has:{" "}
           </p>
           <ul>
             <li>
@@ -64,9 +65,9 @@ export default function ProjectsPage() {
               recurring comparisons to Bootstrap.
             </li>
           </ul>
-          <div className="items-center flex gap-4">
+          <div className="flex items-center gap-4">
             <a
-              className="items-center flex gap-2"
+              className="flex items-center gap-2"
               href="https://css2wind.com"
               target="_blank"
             >
@@ -74,7 +75,7 @@ export default function ProjectsPage() {
               <ArrowUpRight className="size-5" />
             </a>
             <a
-              className="items-center flex gap-2"
+              className="flex items-center gap-2"
               href="https://github.com/LukeberryPi/css2wind"
               target="_blank"
             >
@@ -84,32 +85,32 @@ export default function ProjectsPage() {
           </div>
         </article>
         <article>
-          <div className="mt-10 flex justify-between flex-col gap-4 sm:items-center sm:flex-row">
+          <div className="mt-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
             <h2 className="m-0 normal-case">
               An anti-procrastination to-do list
             </h2>
             <div className="flex items-center gap-4">
-              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">
+              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
                 React
               </div>
-              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">
+              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
                 TailwindCSS
               </div>
-              <div className="ring-1 ring-zinc-950 dark:ring-zinc-300 px-2 py-1">
+              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
                 Vite
               </div>
             </div>
           </div>
           <a
             href="https://phived.com"
-            className="group block overflow-hidden my-6 relative ring-1 ring-zinc-950"
+            className="group relative my-6 block overflow-hidden ring-1 ring-zinc-950"
             target="_blank"
           >
-            <span className="z-10 absolute flex items-center gap-2 top-2 right-2 opacity-0 transition-all dark:text-zinc-950 group-hover:opacity-100">
+            <span className="absolute right-2 top-2 z-10 flex items-center gap-2 opacity-0 transition-all group-hover:opacity-100 dark:text-zinc-950">
               Click to visit website <ArrowUpRight className="size-5" />
             </span>
             <Image
-              className="size-full group-hover:scale-105 transition-all"
+              className="size-full transition-all group-hover:scale-105"
               src="/projects/phived.png"
               width={9999}
               height={250}
@@ -137,9 +138,9 @@ export default function ProjectsPage() {
               access your tasks from any device.
             </li>
           </ul>
-          <div className="items-center flex gap-4">
+          <div className="flex items-center gap-4">
             <a
-              className="items-center flex gap-2"
+              className="flex items-center gap-2"
               href="https://phived.com"
               target="_blank"
             >
@@ -147,7 +148,7 @@ export default function ProjectsPage() {
               <ArrowUpRight className="size-5" />
             </a>
             <a
-              className="items-center flex gap-2"
+              className="flex items-center gap-2"
               href="https://github.com/LukeberryPi/phived"
               target="_blank"
             >

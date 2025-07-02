@@ -37,7 +37,7 @@ export default function RootLayout({
           {children}
           <ScrollToTop />
         </main>
-        <footer className="max-w-prose mx-auto flex gap-6 justify-center mt-12 text-zinc-500 dark:text-zinc-400">
+        <footer className="mx-auto mt-12 flex max-w-prose justify-center gap-6 text-zinc-500 dark:text-zinc-400">
           <a href="https://github.com/LukeberryPi/blog" target="_blank">
             Code
           </a>

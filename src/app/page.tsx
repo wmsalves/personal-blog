@@ -78,7 +78,7 @@ const ExternalLink = (link: Link) => {
       key={link.description}
       href={link.url}
       target="_blank"
-      className="flex items-center justify-between ring-1 ring-zinc-950 dark:ring-zinc-200 p-4 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all"
+      className="flex items-center justify-between p-4 ring-1 ring-zinc-950 transition-all hover:bg-zinc-200 dark:ring-zinc-200 dark:hover:bg-zinc-800"
     >
       <span className="flex items-center gap-4">
         {link.icon} {link.description}
@@ -107,7 +107,7 @@ const InternalLink = (link: Link) => {
   return (
     <Link className="group flex items-center gap-2" href={link.url}>
       {link.description}
-      <ArrowRight className="size-5 group-hover:translate-x-1 transition-all" />
+      <ArrowRight className="size-5 transition-all group-hover:translate-x-1" />
     </Link>
   );
 };
@@ -123,7 +123,7 @@ export default function HomePage() {
           icon={link.icon}
         />
       ))}
-      <div className="flex justify-center sm:justify-between flex-col sm:flex-row max-sm:gap-8">
+      <div className="flex flex-col justify-center max-sm:gap-8 sm:flex-row sm:justify-between">
         <div className="flex flex-col gap-4">
           {internalLinks.map((link: Link) => (
             <InternalLink
@@ -133,16 +133,16 @@ export default function HomePage() {
             />
           ))}
         </div>
-        <div className="flex gap-2 flex-col">
+        <div className="flex flex-col gap-2">
           <a
             href="/luke-berry-cv.pdf"
             download="Luke-Berry-CV.pdf"
-            className="bg-zinc-900 dark:bg-zinc-200 p-4 text-zinc-100 dark:text-zinc-900 flex flex-col sm:flex-row items-center gap-3 hover:bg-zinc-700 dark:hover:bg-zinc-400 transition-all"
+            className="flex flex-col items-center gap-3 bg-neutral-900 p-4 text-zinc-100 transition-all hover:bg-neutral-700 sm:flex-row dark:bg-zinc-200 dark:text-neutral-900 dark:hover:bg-zinc-400"
           >
             <span className="text-nowrap">Download my CV</span>
             <Download className="size-5 max-sm:hidden" />
           </a>
-          <span className="text-zinc-500 dark:text-zinc-400 max-sm:text-center">
+          <span className="text-zinc-500 max-sm:text-center dark:text-zinc-400">
             It&apos;s only one page.
           </span>
         </div>

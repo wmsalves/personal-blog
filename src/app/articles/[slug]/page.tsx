@@ -10,7 +10,7 @@ export default async function ArticlePage({
 
   return (
     <section>
-      <div className="flex flex-col my-12">
+      <div className="my-12 flex flex-col">
         <h1 className="font-bold">{articleData.title}</h1>
         <span className="text-zinc-500">{articleData.date}</span>
       </div>
