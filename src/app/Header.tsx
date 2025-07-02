@@ -75,21 +75,21 @@ export default function Header() {
             /projects
             <div
               data-is-current-path={path === "/projects"}
-              className="hidden data-[is-current-path=true]:block size-[5px] bg-emerald-600 dark:bg-sky-600 absolute rounded-full left-1/2"
+              className="hidden data-[is-current-path=true]:block size-[5px] bg-emerald-600 dark:bg-sky-500 absolute rounded-full left-1/2"
             />
           </Link>
           <Link className="relative" href="/articles">
             /articles
             <div
               data-is-current-path={path.startsWith("/articles")}
-              className="hidden size-[5px] data-[is-current-path=true]:block bg-emerald-600 dark:bg-sky-600 absolute rounded-full left-1/2"
+              className="hidden size-[5px] data-[is-current-path=true]:block bg-emerald-600 dark:bg-sky-500 absolute rounded-full left-1/2"
             />
           </Link>
           <Link className="relative" href="/about">
             /about
             <div
               data-is-current-path={path === "/about"}
-              className="hidden size-[5px] data-[is-current-path=true]:block bg-emerald-600 dark:bg-sky-600 absolute rounded-full left-1/2"
+              className="hidden size-[5px] data-[is-current-path=true]:block bg-emerald-600 dark:bg-sky-500 absolute rounded-full left-1/2"
             />
           </Link>
         </div>
