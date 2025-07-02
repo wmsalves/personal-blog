@@ -7,8 +7,8 @@ import Script from "next/script";
 import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
-  title: "LukeberryPi's Blog",
-  description: "LukberryPi's Blog",
+  title: "Luke Berry",
+  description: "Luke Berry's personal website.",
 };
 
 const karla = Karla({

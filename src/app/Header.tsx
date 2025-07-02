@@ -54,9 +54,9 @@ export default function Header() {
             <ChevronLeft />
           </div>
           <div className="flex w-full flex-col">
-            <span className="font-bold">LukeberryPi</span>
+            <span className="font-bold">Luke Berry</span>
             <span className="text-zinc-500 dark:text-zinc-400">
-              Software Developer
+              Software Engineer
             </span>
           </div>
         </Link>

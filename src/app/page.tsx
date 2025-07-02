@@ -63,7 +63,7 @@ const externalLinks: Link[] = [
   },
   {
     description: "GitHub",
-    url: "https://github.com/LukeberryPi",
+    url: "https://github.com/lukeberrypi",
     icon: <SiGithub />,
   },
   {
@@ -73,17 +73,12 @@ const externalLinks: Link[] = [
   },
   {
     description: "Youtube",
-    url: "https://youtube.com/@LukeberryPi",
+    url: "https://youtube.com/@lukeberrypi",
     icon: <SiYoutube />,
   },
-  // {
-  //   description: "Bluesky",
-  //   url: "https://bsky.app/profile/lukeberrypi.com",
-  //   icon: <BskyLogo />,
-  // },
   {
     description: "X (formerly Twitter)",
-    url: "https://x.com/LukeberryPi",
+    url: "https://x.com/lukeberrypi",
     icon: <XLogo />,
   },
 ];
