@@ -72,7 +72,7 @@ const externalLinks: Link[] = [
     icon: <RaycastLogo />,
   },
   {
-    description: "Youtube",
+    description: "YouTube",
     url: "https://youtube.com/@lukeberrypi",
     icon: <SiYoutube />,
   },
