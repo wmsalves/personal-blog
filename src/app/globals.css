@@ -34,7 +34,7 @@
     }
 
     article h2 {
-        @apply uppercase text-center text-6xl mt-12 font-bold;
+        @apply uppercase text-center mt-12 font-bold;
     }
 
     article p {
