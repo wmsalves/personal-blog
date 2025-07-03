@@ -26,25 +26,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="min-h-screen">
-      <body className={`${karla.className} min-h-full px-6 py-10`}>
+      <body className={`${karla.className} min-h-full px-6`}>
         <Script id="theme-toggle" strategy="afterInteractive">
           {`document.documentElement.classList.toggle("dark", localStorage.theme ===
         "dark" || (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches))`}
         </Script>
         <Header />
-        <main className="mx-auto max-w-prose">
+        <main className="mx-auto py-4 max-w-prose">
           {children}
           <ScrollToTop />
         </main>
-        <footer className="mx-auto mt-12 flex max-w-prose justify-center gap-6 text-zinc-500 dark:text-zinc-400">
-          <a href="https://github.com/LukeberryPi/blog" target="_blank">
-            Code
-          </a>
-          <Link href="/rss.xml">RSS Feed</Link>
-          <a href="https://x.com/LukeberryPi" target="_blank">
-            Made by LukeberryPi
-          </a>
+        <footer className="mx-auto flex max-w-prose flex-col py-6 items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+          <div className="flex items-center gap-4">
+            <a href="https://github.com/LukeberryPi/blog" target="_blank">
+              Code
+            </a>
+            <Link href="/rss.xml">RSS Feed</Link>
+            <a href="https://x.com/LukeberryPi" target="_blank">
+              by @LukeberryPi
+            </a>
+          </div>
+          <blockquote className="text-center font-bold text-zinc-800 dark:text-zinc-300">
+            Smile, you're alive :)
+          </blockquote>
         </footer>
       </body>
     </html>

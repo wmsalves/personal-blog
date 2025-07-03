@@ -1,6 +1,7 @@
 ---
 title: "How (not) to get a job in Spain"
 date: "2024-09-15"
+tags: ["career", "travel"]
 ---
 
 Earlier this year, I flew to Italy to visit my Dad for a couple of months. In that period, I also went to Málaga to see an old friend and to the UK to see my family.

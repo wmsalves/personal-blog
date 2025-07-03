@@ -8,15 +8,15 @@ export default function ProjectsPage() {
       <section className="space-y-16">
         <article>
           <div className="mt-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
-            <h2 className="m-0 normal-case">A minigame to learn TailwindCSS</h2>
-            <div className="flex items-center gap-4">
-              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
+            <h2 className="m-0">A minigame to learn TailwindCSS</h2>
+            <div className="flex items-center gap-3">
+              <div className="rounded-full bg-[#007ACC] px-2 py-px text-sm text-white ring-1 ring-zinc-800 dark:ring-0">
                 TypeScript
               </div>
-              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
+              <div className="rounded-full bg-[#38BDF9] px-2 py-px text-sm text-black ring-1 ring-zinc-800 dark:ring-0">
                 TailwindCSS
               </div>
-              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
+              <div className="rounded-full bg-black px-2 py-px text-sm text-white ring-1 ring-zinc-800 dark:bg-white dark:text-black dark:ring-0">
                 Next.js
               </div>
             </div>
@@ -24,7 +24,7 @@ export default function ProjectsPage() {
           <a
             href="https://css2wind.com"
             target="_blank"
-            className="group relative my-6 block overflow-hidden ring-1 ring-zinc-950"
+            className="group relative my-6 block overflow-hidden py-px"
           >
             <span className="absolute right-2 top-2 z-10 flex items-center gap-2 text-zinc-100 opacity-0 transition-all group-hover:opacity-100">
               Click to visit website <ArrowUpRight className="size-5" />
@@ -49,11 +49,14 @@ export default function ProjectsPage() {
               the recommended tooling to maximize productivity and
               maintainability while using TailwindCSS. It mentions libraries
               such as{" "}
-              <a href="#" target="_blank">
+              <a
+                href="https://tailwindcss.com/blog/automatic-class-sorting-with-prettier"
+                target="_blank"
+              >
                 prettier-plugin-tailwindcss
               </a>{" "}
               and{" "}
-              <a href="#" target="_blank">
+              <a href="https://ui.shadcn.com/" target="_blank">
                 shadcn/ui
               </a>
               .
@@ -86,27 +89,25 @@ export default function ProjectsPage() {
         </article>
         <article>
           <div className="mt-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
-            <h2 className="m-0 normal-case">
-              An anti-procrastination to-do list
-            </h2>
-            <div className="flex items-center gap-4">
-              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
+            <h2 className="m-0">An anti-procrastination to-do list</h2>
+            <div className="flex items-center gap-3">
+              <span className="rounded-full bg-[#00D8FE] px-2 py-px text-sm text-black ring-1 ring-zinc-800 dark:ring-0">
                 React
-              </div>
-              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
+              </span>
+              <span className="rounded-full bg-[#38BDF9] px-2 py-px text-sm text-black ring-1 ring-zinc-800 dark:ring-0">
                 TailwindCSS
-              </div>
-              <div className="px-2 py-1 ring-1 ring-zinc-950 dark:ring-zinc-300">
+              </span>
+              <span className="rounded-full bg-gradient-to-r from-[#926AFE] to-[#49C7FF] px-2 py-px text-sm text-white ring-1 ring-zinc-800 dark:ring-0">
                 Vite
-              </div>
+              </span>
             </div>
           </div>
           <a
             href="https://phived.com"
-            className="group relative my-6 block overflow-hidden ring-1 ring-zinc-950"
+            className="group relative my-6 block overflow-hidden ring-1 ring-zinc-800 text-zinc-800"
             target="_blank"
           >
-            <span className="absolute right-2 top-2 z-10 flex items-center gap-2 opacity-0 transition-all group-hover:opacity-100 dark:text-zinc-950">
+            <span className="absolute right-2 top-2 z-10 flex items-center gap-2 opacity-0 transition-all group-hover:opacity-100">
               Click to visit website <ArrowUpRight className="size-5" />
             </span>
             <Image

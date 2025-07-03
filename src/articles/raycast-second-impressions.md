@@ -1,6 +1,7 @@
 ---
 title: "Raycast: Second Impressions"
-date: "2024-07-15"
+date: "2024-05-15"
+tags: ["raycast", "technology"]
 ---
 
 When I first bought a MacBook, I came across Alfred: an app launcher to replace Apple's Spotlight. What I liked the most was:
@@ -74,11 +75,11 @@ Alfred opens it in Google Chrome and Raycast opens it in Safari. I much prefer t
 
 ### Navigating with Escape
 
-In Raycast, `esc` goes back to the previous page. I wish I could configure this to the more universal `cmd + [` and `cmd + ]`, which I've grown used to. And an option for `esc` to close the entire Raycast app would be amazing.
+In Raycast, `esc` goes back to the previous page. I wish I could configure this to the more universal `⌘ + [` and `⌘ + ]`, which I've grown used to. And an option for `esc` to close the entire Raycast app would be amazing.
 
 ### Using "fn" as a Modifier Key
 
-It is impossible to setup hotkeys for Raycast using the "globe/fn" key. This would be a nice addition since using `cmd` and `ctrl` often leads to conflicting hotkeys between different apps.
+It is impossible to setup hotkeys for Raycast using the "globe/fn" key. This would be a nice addition since using `⌘` and `ctrl` often leads to conflicting hotkeys between different apps.
 
 ## Conclusion
 

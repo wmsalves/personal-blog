@@ -17,11 +17,11 @@
 @layer base {
   html,
   body {
-    @apply bg-zinc-50 text-zinc-950 dark:bg-neutral-900 dark:text-zinc-200;
+    @apply min-h-screen bg-zinc-50 text-zinc-800 dark:bg-zinc-900 dark:text-zinc-300;
   }
 
   article {
-    @apply mb-12;
+    @apply mb-12 leading-relaxed;
   }
 
   article > h1,
@@ -30,20 +30,20 @@
   article > h4,
   article > h5,
   article > h6 {
-    @apply my-6 font-bold text-zinc-950 dark:text-zinc-200;
+    @apply my-6 font-bold;
   }
 
   article h2 {
-    @apply mt-12 text-center font-bold uppercase;
+    @apply mt-12 text-center text-2xl font-bold;
   }
 
   article p {
-    @apply my-4 text-zinc-950 dark:text-zinc-200;
+    @apply my-4;
   }
 
   article ul,
   article ol {
-    @apply my-4 pl-8 text-zinc-950 dark:text-zinc-200;
+    @apply my-4 pl-12;
   }
 
   article li {
@@ -59,11 +59,11 @@
   }
 
   article blockquote {
-    @apply my-4 border-l-4 border-emerald-600 pl-4 dark:border-sky-500;
+    @apply my-4 border-l-2 border-sky-500 pl-4 dark:border-sky-600;
   }
 
   article :not(pre) > code {
-    @apply mx-0.5 select-all text-nowrap rounded px-1.5 py-0.5 text-sm ring-1 ring-zinc-950 dark:ring-zinc-200;
+    @apply mx-0.5 select-all text-nowrap rounded px-1.5 py-0.5 text-sm ring-1 ring-zinc-800 dark:ring-zinc-200;
   }
 
   article pre {
@@ -71,7 +71,7 @@
   }
 
   article a {
-    @apply underline decoration-emerald-600 underline-offset-4 dark:decoration-sky-500;
+    @apply underline decoration-sky-500 decoration-2 underline-offset-4 dark:decoration-sky-600;
   }
 
   button,
