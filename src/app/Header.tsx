@@ -43,28 +43,38 @@ export default function Header() {
   return (
     <header className="mx-auto max-w-prose pb-8 pt-10">
       <nav className="flex items-center justify-between max-sm:flex-col max-sm:gap-6">
-        <Link
-          data-is-home={isHome}
-          className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 no-underline ring-zinc-300 data-[is-home=true]:ring-0 max-sm:text-center hover:ring-1 dark:ring-sky-600"
-          href="/"
-        >
-          <div className="absolute left-1 flex size-4 h-full w-12 items-center px-2 group-data-[is-home=true]:hidden">
-            <ChevronLeft />
+        {isHome ? (
+          <div>
+            <div className="flex flex-col max-sm:items-center">
+              Luke Berry
+              <span className="text-zinc-500 dark:text-zinc-400">
+                Software Engineer
+              </span>
+            </div>
           </div>
-          <div className="flex flex-col max-sm:items-center">
-            Luke Berry
-            <span className="text-zinc-500 dark:text-zinc-400">
-              Software Engineer
-            </span>
-          </div>
-        </Link>
+        ) : (
+          <Link
+            className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 no-underline ring-zinc-300 hover:ring-1 max-sm:text-center dark:ring-sky-600"
+            href="/"
+          >
+            <div className="absolute left-1 flex size-4 h-full w-12 items-center px-2">
+              <ChevronLeft />
+            </div>
+            <div className="flex flex-col max-sm:items-center">
+              Luke Berry
+              <span className="text-zinc-500 dark:text-zinc-400">
+                Software Engineer
+              </span>
+            </div>
+          </Link>
+        )}
         <div className="flex items-center gap-4">
           <button
             onClick={() => toggleTheme()}
             className="group relative flex items-center"
           >
             {isDarkMode ? (
-              <Moon className="size-5 transition-all sm:hover:-rotate-12 sm:hover:scale-110 fill-gray-700" />
+              <Moon className="size-5 fill-gray-700 transition-all sm:hover:-rotate-12 sm:hover:scale-110" />
             ) : (
               <Sun className="size-5 fill-yellow-300 transition-all sm:hover:rotate-45 sm:hover:scale-110" />
             )}
