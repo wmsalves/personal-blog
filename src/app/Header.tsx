@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft, Contact2, Moon, Pin, Sun } from "lucide-react";
+import { ChevronLeft, Moon, Sun, Triangle } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -41,56 +41,57 @@ export default function Header() {
   };
 
   return (
-    <header className="mx-auto max-w-prose py-6">
-      <nav className="flex flex-col items-center justify-between max-sm:gap-6 sm:flex-row">
+    <header className="mx-auto max-w-prose pb-8 pt-10">
+      <nav className="flex items-center justify-between max-sm:flex-col max-sm:gap-6">
         <Link
-          className="relative flex items-center no-underline max-sm:text-center"
+          data-is-home={isHome}
+          className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 no-underline ring-zinc-300 data-[is-home=true]:ring-0 max-sm:text-center hover:ring-1 dark:ring-sky-600"
           href="/"
         >
-          <div
-            data-is-home={isHome}
-            className="absolute -left-12 flex size-5 h-full w-12 items-center px-2 data-[is-home=true]:hidden"
-          >
+          <div className="absolute left-1 flex size-5 h-full w-12 items-center px-2 group-data-[is-home=true]:hidden">
             <ChevronLeft />
           </div>
-          <div className="flex flex-col items-center sm:items-start">
-            <span className="font-bold">Luke Berry</span>
+          <div className="flex flex-col max-sm:items-center">
+            Luke Berry
             <span className="text-zinc-500 dark:text-zinc-400">
               Software Engineer
             </span>
           </div>
         </Link>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-4">
           <button
             onClick={() => toggleTheme()}
             className="group relative flex items-center"
           >
             {isDarkMode ? (
-              <Moon className="size-5" />
+              <Moon className="size-5 transition-all sm:hover:-rotate-12 sm:hover:scale-110 fill-gray-700" />
             ) : (
-              <Sun className="size-5 fill-yellow-300" />
+              <Sun className="size-5 fill-yellow-300 transition-all sm:hover:rotate-45 sm:hover:scale-110" />
             )}
           </button>
-          <Link className="relative" href="/projects">
+          <Link
+            className="group relative rounded px-2 py-px ring-zinc-300 sm:hover:ring-1 dark:ring-sky-600"
+            href="/projects"
+            data-is-current-path={path === "/projects"}
+          >
             /projects
-            <div
-              data-is-current-path={path === "/projects"}
-              className="absolute left-1/2 mt-1 hidden size-1.5 rounded-full bg-sky-500 ring-1 ring-zinc-800 data-[is-current-path=true]:block dark:bg-sky-600 dark:ring-0"
-            />
+            <Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-sky-600 dark:text-transparent" />
           </Link>
-          <Link className="relative" href="/articles">
+          <Link
+            className="group relative rounded px-2 py-px ring-zinc-300 sm:hover:ring-1 dark:ring-sky-600"
+            href="/articles"
+            data-is-current-path={path.startsWith("/articles")}
+          >
             /articles
-            <div
-              data-is-current-path={path.startsWith("/articles")}
-              className="absolute left-1/2 mt-1 hidden size-1.5 rounded-full bg-sky-500 ring-1 ring-zinc-800 data-[is-current-path=true]:block dark:bg-sky-600 dark:ring-0"
-            />
+            <Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-sky-600 dark:text-transparent" />
           </Link>
-          <Link className="relative" href="/about">
+          <Link
+            className="group relative rounded px-2 py-px ring-zinc-300 sm:hover:ring-1 dark:ring-sky-600"
+            href="/about"
+            data-is-current-path={path === "/about"}
+          >
             /about
-            <div
-              data-is-current-path={path === "/about"}
-              className="absolute left-1/2 mt-1 hidden size-1.5 rounded-full bg-sky-500 ring-1 ring-zinc-800 data-[is-current-path=true]:block dark:bg-sky-600 dark:ring-0"
-            />
+            <Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-sky-600 dark:text-transparent" />
           </Link>
         </div>
       </nav>

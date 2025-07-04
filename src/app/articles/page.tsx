@@ -1,26 +1,34 @@
 import { Article, getAllTags, getArticles } from "@/src/lib/articles";
 import moment from "moment";
 import Link from "next/link";
+import { Tag } from "./[slug]/page";
 
 export default async function ArticlesPage() {
   const articles = getArticles();
   return (
-    <div className="w-full">
-      <h1 className="my-12 text-center text-4xl font-bold">Articles</h1>
+    <div>
+      <h1 className="mb-14 mt-4 text-center text-4xl font-bold">Articles</h1>
 
       {/* TODO: add tags filter (OR between all selections)
       <p>{JSON.stringify(getAllTags())}</p> */}
 
-      <section className="flex w-full flex-col divide-y divide-zinc-400 border border-zinc-400 dark:divide-zinc-600 dark:border-zinc-600">
+      <section className="flex flex-col divide-y divide-zinc-400 ring-1 ring-zinc-400 rounded overflow-hidden dark:divide-zinc-500 dark:ring-zinc-500">
         {articles.map((article: Article) => (
           <Link
-            className="flex w-full flex-col justify-between p-4 hover:bg-zinc-100 sm:flex-row sm:items-center dark:hover:bg-zinc-800"
+            className="flex items-center justify-between px-4 py-2 transition-all sm:hover:bg-zinc-100 sm:p-4 dark:hover:bg-zinc-800"
             key={article.id}
             href={`/articles/${article.id}`}
           >
-            {article.title}{" "}
-            <span className="text-zinc-500 dark:text-zinc-400">
-              {moment(article.date, "YYYY-MM-DD").format("MMMM Do, YYYY")}
+            <div className="flex gap-x-2 gap-y-1 max-sm:flex-col sm:items-center">
+              {article.title}{" "}
+              <span className="flex gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+                {article.tags.map((tag) => (
+                  <span key={tag}>#{tag}</span>
+                ))}
+              </span>
+            </div>
+            <span className="text-zinc-500 max-sm:text-sm dark:text-zinc-400">
+              {moment(article.date, "YYYY-MM-DD").format("MMM/YYYY")}
             </span>
           </Link>
         ))}

@@ -3,16 +3,16 @@ import {
   SiLinkedin,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
-import { ArrowUpRight, ChevronsRight, Download, Mail } from "lucide-react";
+import { ArrowUpRight, Copy, Download, Send } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 
 const XLogo = () => {
   return (
-    <svg viewBox="0 0 24 24" width="24">
+    <svg viewBox="0 0 24 24" width="20" height="20" className="ml-1">
       <g>
         <path
-          className="fill-zinc-950 dark:fill-zinc-200"
+          className="fill-zinc-950 dark:fill-zinc-300"
           d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
         ></path>
       </g>
@@ -62,11 +62,7 @@ const externalLinks: Link[] = [
     name: "YouTube",
     description: "watch me talk",
     url: "https://youtube.com/@lukeberrypi",
-    icon: (
-      <div>
-        <SiYoutube className="fill-[#FF0032] dark:fill-zinc-300" />
-      </div>
-    ),
+    icon: <SiYoutube className="fill-[#FF0032] dark:fill-zinc-300" />,
   },
   {
     name: "X (formerly Twitter)",
@@ -88,11 +84,11 @@ const ExternalLink = (link: Link) => {
       key={link.description}
       href={link.url}
       target="_blank"
-      className="group flex items-center justify-between text-nowrap p-4 ring-zinc-500 transition-all hover:bg-zinc-100 dark:ring-zinc-300 dark:hover:bg-zinc-800"
+      className="group flex items-center justify-between p-4 transition-all sm:hover:bg-zinc-100 dark:hover:bg-zinc-800"
     >
       <span className="flex items-center gap-4">
         {link.icon} {link.name}
-        <span className="-translate-x-3 text-zinc-500 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100 max-sm:hidden dark:text-zinc-400">
+        <span className="-translate-x-4 text-zinc-500 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100 max-sm:hidden dark:text-zinc-400">
           {link.description}
         </span>
       </span>
@@ -104,33 +100,34 @@ const ExternalLink = (link: Link) => {
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
-      <p>
-        Cats are known for their quirky personalities and playful antics. They
-        can go from being aloof to affectionate in a matter of seconds. One
-        moment, they’re perched on a windowsill.
+      <p className="text-sm">
+        London-based Brazilian obsessed with UI for a decade. Working as a
+        Software Engineer for half that time. I love Raycast, TailwindCSS,
+        DJing, playing football, and creating pretty websites.
       </p>
-      <div className="divide-y divide-zinc-400 border border-zinc-400 dark:divide-zinc-500 dark:border-zinc-500">
+      <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
         {externalLinks.map((link: Link) => (
-          <ExternalLink
-            name={link.name}
-            key={link.description}
-            description={link.description}
-            url={link.url}
-            icon={link.icon}
-          />
+          <ExternalLink key={link.url} {...link} />
         ))}
       </div>
-      <div className="flex flex-col justify-center gap-y-6 max-sm:flex-col-reverse sm:flex-row sm:justify-between">
-        <div className="flex flex-col justify-center gap-4 max-sm:items-center">
-          <a
-            className="group flex items-center gap-2"
-            href="mailto:lukeberrypi@gmail.com"
-          >
-            <Mail className="size-4" />
-            Send me an email
-            <ChevronsRight className="size-5 -translate-x-2 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100 max-sm:hidden" />
-          </a>
-          <span className="-mt-2 flex w-fit items-center gap-2 rounded-full bg-green-100 px-2 py-0.5 text-green-700 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
+      <div className="flex justify-center gap-y-6 max-sm:flex-col-reverse sm:justify-between">
+        <div className="flex flex-col justify-center gap-y-5 max-sm:items-center">
+          <div className="group relative -m-8 flex items-center gap-3 p-8 transition-all">
+            lukeberrypi@gmail.com
+            <div className="inline-flex items-center gap-3 transition-all sm:absolute sm:right-4 sm:opacity-0 sm:group-hover:right-1 sm:group-hover:opacity-100">
+              {/* TODO add copy email
+                <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-300">
+                <Copy className="size-4" />
+              </button> */}
+              <a
+                href="mailto:lukeberrypi@gmail.com"
+                className="text-zinc-800 dark:text-zinc-300"
+              >
+                <Send className="size-4" />
+              </a>
+            </div>
+          </div>
+          <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-green-100 px-2 py-0.5 text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
             <div className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />
             Online
           </span>
@@ -139,7 +136,7 @@ export default function HomePage() {
           <a
             href="/luke-berry-cv.pdf"
             download="Luke-Berry-CV.pdf"
-            className="flex flex-row items-center justify-center gap-3 bg-zinc-800 px-4 py-3 text-zinc-200 transition-all hover:bg-zinc-700 dark:bg-zinc-300 dark:text-zinc-800 dark:hover:bg-zinc-400"
+            className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-all sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 dark:hover:bg-zinc-800"
           >
             <span className="text-nowrap">Download my CV</span>
             <Download className="size-5 max-sm:hidden" />
