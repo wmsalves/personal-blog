@@ -48,7 +48,7 @@ export default function Header() {
           className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 no-underline ring-zinc-300 data-[is-home=true]:ring-0 max-sm:text-center hover:ring-1 dark:ring-sky-600"
           href="/"
         >
-          <div className="absolute left-1 flex size-5 h-full w-12 items-center px-2 group-data-[is-home=true]:hidden">
+          <div className="absolute left-1 flex size-4 h-full w-12 items-center px-2 group-data-[is-home=true]:hidden">
             <ChevronLeft />
           </div>
           <div className="flex flex-col max-sm:items-center">
