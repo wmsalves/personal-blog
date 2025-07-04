@@ -43,7 +43,7 @@ export default function AboutPage() {
           to better deal with datasets, as well as Selenium and pyautogui.
         </p>
         <p>
-          I've always been obsessed with user interfaces. My friends
+          I&apos;ve always been obsessed with user interfaces. My friends
           couldn&apos;t bear me pointing out broken buttons and ugly websites
           all the time.
         </p>
@@ -76,7 +76,7 @@ export default function AboutPage() {
           <a href="https://x.com/lukeberrypi">X</a> or an email{" "}
           <a href="mailto:lukeberrypi@gmail.com">lukeberrypi@gmail.com</a>.
         </p>
-        <p>Smile, you're alive :)</p>
+        <p>Smile, you&apos;re alive :)</p>
         <p>
           Best,
           <br />
