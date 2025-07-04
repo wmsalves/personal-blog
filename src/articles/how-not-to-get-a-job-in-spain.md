@@ -4,7 +4,7 @@ date: "2024-09-15"
 tags: ["life", "travel"]
 ---
 
-Earlier this year, I flew to Italy to visit my Dad for a couple of months. In that period, I also went to Málaga to see an old friend and to the UK to see my family.
+I flew to Italy to visit my Dad earlier this year. In that period, I also went to Málaga to see an old friend and to the UK to see my family.
 
 A day before going back to Brazil, I got an unexpected invite: my friend called me to live with him in Málaga. I cancelled my flight back home and two weeks later I was back in Spain.
 
@@ -82,7 +82,7 @@ After a week, I got the positive feedback from the company and a final offer: �
 
 I moved onto the onboarding: documentation, signing contracts, and more.
 
-> Tip: Always ask for a bigger salary than your expectation. If you are participating in multiple hiring process, use that as leverage.
+> Tip: At the negotiation stage, always ask for a bigger salary than your expectation. You will never get disqualified for it. If you are participating in multiple hiring process, use that as leverage.
 
 ## Bad Ending
 

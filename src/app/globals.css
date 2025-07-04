@@ -24,7 +24,9 @@
     @apply flex flex-col gap-y-4;
   }
 
-  p {
+  p,
+  ul,
+  ol {
     @apply text-zinc-700 dark:text-zinc-300/80;
   }
 
@@ -62,6 +64,6 @@
   }
 
   article a {
-    @apply underline decoration-sky-500 underline-offset-4 text-zinc-300 dark:decoration-sky-600;
+    @apply text-zinc-300 underline decoration-sky-500 underline-offset-4 dark:decoration-sky-600;
   }
 }
