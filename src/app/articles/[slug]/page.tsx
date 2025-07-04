@@ -1,7 +1,7 @@
 import { getArticleData } from "@/src/lib/articles";
 import { Article } from "../../../components/article";
 
-export function Tag({ tag }: { tag: string }) {
+function Tag({ tag }: { tag: string }) {
   return (
     <div className="flex size-4 w-fit items-center justify-center rounded-full px-2 py-3 text-sm ring-1 ring-zinc-400 dark:ring-1 dark:ring-zinc-500">
       #{tag}

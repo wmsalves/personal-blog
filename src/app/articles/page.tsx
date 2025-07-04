@@ -1,7 +1,7 @@
-import { Article, getAllTags, getArticles } from "@/src/lib/articles";
+import { Article, getArticles } from "@/src/lib/articles";
 import moment from "moment";
 import Link from "next/link";
-import { Tag } from "./[slug]/page";
+// import { Tag } from "./[slug]/page";
 
 export default async function ArticlesPage() {
   const articles = getArticles();
@@ -12,10 +12,10 @@ export default async function ArticlesPage() {
       {/* TODO: add tags filter (OR between all selections)
       <p>{JSON.stringify(getAllTags())}</p> */}
 
-      <section className="flex flex-col divide-y divide-zinc-400 ring-1 ring-zinc-400 rounded overflow-hidden dark:divide-zinc-500 dark:ring-zinc-500">
+      <section className="flex flex-col divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
         {articles.map((article: Article) => (
           <Link
-            className="flex items-center justify-between px-4 py-2 transition-all sm:hover:bg-zinc-100 sm:p-4 dark:hover:bg-zinc-800"
+            className="flex items-center justify-between px-4 py-2 transition-all sm:p-4 sm:hover:bg-zinc-100 dark:hover:bg-zinc-800"
             key={article.id}
             href={`/articles/${article.id}`}
           >
