@@ -27,7 +27,7 @@ export const ScrollToTop = () => {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0 })}
-      className="fixed right-8 top-8 z-10 flex items-center gap-2 py-2 pl-4 pr-3 ring-1 ring-zinc-800 dark:bg-zinc-800 dark:ring-zinc-300"
+      className="fixed right-8 top-8 z-10 flex items-center gap-2 rounded py-2 pl-4 pr-3 ring-1 ring-zinc-400 hover:bg-zinc-100 dark:ring-zinc-500 hover:dark:bg-zinc-800"
     >
       Back to top
       <ArrowUp className="size-5" />

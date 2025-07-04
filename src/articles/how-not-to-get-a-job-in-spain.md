@@ -82,7 +82,7 @@ After a week, I got the positive feedback from the company and a final offer: â‚
 
 I moved onto the onboarding: documentation, signing contracts, and more.
 
-> Tip: At the negotiation stage, always ask for a bigger salary than your expectation. You will never get disqualified for it. If you are participating in multiple hiring process, use that as leverage.
+> Tip: At this stage, always ask for a bigger salary than your expectation. You will never get disqualified for it. If you are participating in multiple hiring process, use that as leverage.
 
 ## Bad Ending
 
