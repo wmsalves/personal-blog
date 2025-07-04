@@ -7,6 +7,7 @@ import html from "remark-html";
 
 export type Article = {
   id: string;
+  tags: string[];
   title: string;
   date: string;
 };
@@ -45,6 +46,7 @@ export function getArticles() {
     return {
       id,
       title: matterResult.data.title,
+      tags: matterResult.data.tags,
       date: moment(matterResult.data.date).format("YYYY-MM-DD"),
     };
   });
@@ -74,6 +76,6 @@ export async function getArticleData(id: string) {
     contentHtml,
     title: matterResult.data.title,
     tags: matterResult.data.tags || [],
-    date: moment(matterResult.data.date, "YYYY-MM-DD").format("MMMM Do, YYYY"),
+    date: moment(matterResult.data.date, "YYYY-MM-DD").format("MMMM  Do, YYYY"),
   };
 }

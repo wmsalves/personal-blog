@@ -14,7 +14,6 @@ export function Article({ html }: { html: string }) {
     });
     const titles = document.querySelectorAll("h2");
     titles.forEach((title) => {
-      console.log(title.textContent);
       title.id = title.textContent?.toLowerCase().replace(/\s/g, "-") as string;
     });
   };
