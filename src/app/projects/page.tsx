@@ -78,14 +78,14 @@ function ProjectCard({
         <a
           href={url}
           target="_blank"
-          className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-100 dark:hover:bg-zinc-800"
+          className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
         >
           <Globe className="size-4" /> Visit website
         </a>
         <a
           href={githubUrl}
           target="_blank"
-          className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-100 dark:hover:bg-zinc-800"
+          className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
         >
           <GitBranch className="size-4" /> View code
         </a>

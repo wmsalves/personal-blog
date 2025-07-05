@@ -84,15 +84,15 @@ const ExternalLink = (link: Link) => {
       key={link.description}
       href={link.url}
       target="_blank"
-      className="group flex items-center justify-between p-4 transition-all sm:hover:bg-zinc-100 dark:hover:bg-zinc-800"
+      className="group flex items-center justify-between p-4 transition-all sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
     >
       <span className="flex items-center gap-4">
         {link.icon} {link.name}
-        <span className="-translate-x-4 text-zinc-500 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100 max-sm:hidden dark:text-zinc-400">
+        <span className="-translate-x-4 text-zinc-500 opacity-0 transition-all max-sm:hidden sm:group-hover:translate-x-0 sm:group-hover:opacity-100 dark:text-zinc-400">
           {link.description}
         </span>
       </span>
-      <ArrowUpRight className="size-5 shrink-0 text-zinc-800 transition-all group-hover:rotate-45 dark:text-zinc-300" />
+      <ArrowUpRight className="size-5 shrink-0 text-zinc-800 transition-all sm:group-hover:rotate-45 dark:text-zinc-300" />
     </a>
   );
 };
@@ -112,7 +112,7 @@ export default function HomePage() {
       </div>
       <div className="flex justify-center gap-y-6 max-sm:flex-col-reverse sm:justify-between">
         <div className="flex flex-col justify-center gap-y-5 max-sm:items-center">
-          <div className="group relative -m-8 flex items-center gap-3 p-8 transition-all">
+          <div className="sm:group relative -m-8 flex items-center gap-3 p-8 transition-all">
             lukeberrypi@gmail.com
             <div className="inline-flex items-center gap-3 transition-all sm:absolute sm:right-4 sm:opacity-0 sm:group-hover:right-1 sm:group-hover:opacity-100">
               {/* TODO add copy email
@@ -127,7 +127,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <span className="-mt-2 text-sm flex w-fit items-center gap-1.5 rounded-full bg-green-100 px-2 py-0.5 text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
+          <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
             <div className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />
             Online
           </span>
@@ -136,7 +136,7 @@ export default function HomePage() {
           <a
             href="/luke-berry-cv.pdf"
             download="Luke-Berry-CV.pdf"
-            className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-all sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 dark:hover:bg-zinc-800"
+            className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-all sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:sm:dark:hover:bg-zinc-800"
           >
             <span className="text-nowrap">Download my CV</span>
             <Download className="size-5 max-sm:hidden" />
