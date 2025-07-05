@@ -7,7 +7,7 @@ export default async function ArticlesPage() {
   const articles = getArticles();
   return (
     <div>
-      <h1 className="mb-14 mt-4 text-center text-4xl font-bold">Articles</h1>
+      <h1 className="mb-16 mt-4 text-center max-sm:text-4xl text-5xl">Articles</h1>
 
       {/* TODO: add tags filter (OR between all selections)
       <p>{JSON.stringify(getAllTags())}</p> */}

@@ -1,7 +1,7 @@
 export default function AboutPage() {
   return (
     <>
-      <h1 className="mb-14 mt-4 text-center text-4xl font-bold">About me</h1>
+      <h1 className="mb-16 mt-4 text-center max-sm:text-4xl text-5xl">About me</h1>
       <article>
         <p>
           I was born in São Paulo and moved to{" "}

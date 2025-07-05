@@ -127,7 +127,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-green-100 px-2 py-0.5 text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
+          <span className="-mt-2 text-sm flex w-fit items-center gap-1.5 rounded-full bg-green-100 px-2 py-0.5 text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
             <div className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />
             Online
           </span>

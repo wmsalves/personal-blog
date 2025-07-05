@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --sh-class: #2563eb;
-  --sh-identifier: #7c3aed;
-  --sh-sign: #334155;
-  --sh-property: #0d9488;
-  --sh-entity: #059669;
-  --sh-jsxliterals: #c026d3;
-  --sh-string: #0891b2;
-  --sh-keyword: #dc2626;
-  --sh-comment: #64748b;
+  --sh-class: #2563eb; /* blue-600 */
+  --sh-identifier: #8b5cf6; /* violet-600 */
+  --sh-sign: #a1a1aa; /* slate-400 */
+  --sh-property: #0d9488; /* teal-600 */
+  --sh-entity: #059669; /* emerald-600 */
+  --sh-jsxliterals: #c026d3; /* fuchsia-600 */
+  --sh-string: #0891b2; /* cyan-600 */
+  --sh-keyword: #ef4444; /* red-500 */
+  --sh-comment: #64748b; /* slate-500 */
 }
 
 @layer base {
@@ -31,11 +31,11 @@
   }
 
   article h2 {
-    @apply pt-8 text-2xl font-bold;
+    @apply pt-8 text-3xl;
   }
 
   article h3 {
-    @apply pt-4 font-bold;
+    @apply pt-4 text-lg;
   }
 
   article ul,
@@ -52,11 +52,11 @@
   }
 
   article blockquote {
-    @apply border-l-2 border-sky-500 pl-3 dark:border-sky-600;
+    @apply border-l-2 border-sky-500 pl-3 text-red-500 dark:border-sky-600 dark:text-zinc-300;
   }
 
   article :not(pre) > code {
-    @apply mx-1 select-all text-nowrap rounded px-1.5 py-0.5 text-sm ring-1 ring-zinc-500 dark:ring-zinc-500;
+    @apply mx-1 select-all text-nowrap rounded px-1.5 py-0.5 text-sm text-zinc-950 ring-1 ring-zinc-300 dark:text-zinc-300 dark:ring-zinc-600;
   }
 
   article pre {
