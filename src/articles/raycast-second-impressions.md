@@ -22,7 +22,9 @@ Even if my first experience with Raycast wasn't convincing, I definitely saw the
 
 Still, out-of-the-box (OOTB) behavior plays a huge role on migrating to/from a similar tool. Most users won't have the patience to configure the new tool and will give up migrating altogether.
 
-I recently decided to give Raycast a second try. **Spoiler: I no longer use Alfred.** In this article I will explain why I came back, what I love and what I wish would change.
+I recently decided to give Raycast a second try. **Spoiler: I no longer use Alfred.**
+
+In this article I will explain why I came back, what I love and what I wish would change.
 
 ## Why I Tried it Again
 

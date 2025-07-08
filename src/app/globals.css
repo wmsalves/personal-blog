@@ -33,7 +33,7 @@
   }
 
   article strong {
-    @apply font-semibold text-zinc-950 dark:text-zinc-200;
+    @apply font-normal text-zinc-950 dark:text-zinc-200;
   }
 
   article {

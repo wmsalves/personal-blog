@@ -51,7 +51,7 @@ export default function Header() {
           <div
             className={`${isHome ? "hidden" : "absolute"} left-1 flex size-4 h-full w-12 items-center px-2`}
           >
-            <ChevronLeft strokeWidth={1.5} />
+            <ChevronLeft strokeWidth={1.4} />
           </div>
           <div className="flex flex-col max-sm:items-center">
             Luke Berry
@@ -68,12 +68,12 @@ export default function Header() {
           >
             {isDarkMode ? (
               <Moon
-                strokeWidth={1.5}
+                strokeWidth={1.4}
                 className="size-5 fill-gray-700 transition-all sm:hover:-rotate-12 sm:hover:scale-110"
               />
             ) : (
               <Sun
-                strokeWidth={1.5}
+                strokeWidth={1.4}
                 className="size-5 fill-yellow-300 transition-all sm:hover:rotate-45 sm:hover:scale-110"
               />
             )}
