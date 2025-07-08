@@ -37,7 +37,7 @@ export default async function ArticlePage({
     <>
       <div className="flex flex-col items-center justify-center p-8">
         <div className="text-sm text-zinc-500 max-sm:text-xs dark:text-zinc-400">
-          {/* @eslint-disable-next-line react/jsx-no-comment-textnode */}
+          {/* @eslint-disable-next-line react/jsx-no-comment-textnodes */}
           {articleData.date} // {articleData.location}
         </div>
         <div className="flex w-full max-w-prose flex-col items-center justify-center gap-4 px-4 pb-6 pt-1">
