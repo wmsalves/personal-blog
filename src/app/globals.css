@@ -21,15 +21,11 @@
   }
 
   article p {
-    @apply leading-relaxed text-zinc-700 dark:text-zinc-300/80;
+    @apply leading-relaxed text-zinc-600 dark:text-zinc-300/80;
   }
 
   article li {
-    @apply text-zinc-700 dark:text-zinc-300/80;
-  }
-
-  article p {
-    @apply leading-relaxed;
+    @apply text-zinc-600 dark:text-zinc-300/80;
   }
 
   article strong {
