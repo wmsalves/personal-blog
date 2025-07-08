@@ -97,7 +97,9 @@ function ProjectCard({
 export default function ProjectsPage() {
   return (
     <>
-      <h1 className="mb-16 mt-4 text-center max-sm:text-4xl text-5xl">Projects</h1>
+      <h1 className="mb-16 mt-4 text-center text-5xl max-sm:text-4xl">
+        Projects
+      </h1>
       <div className="space-y-20">
         {projects.map((project) => (
           <ProjectCard key={project.url} {...project} />

@@ -1,7 +1,9 @@
 export default function AboutPage() {
   return (
     <>
-      <h1 className="mb-16 mt-4 text-center max-sm:text-4xl text-5xl">About me</h1>
+      <h1 className="mb-16 mt-4 text-center text-5xl max-sm:text-4xl">
+        About me
+      </h1>
       <article>
         <p>
           I was born in São Paulo and moved to{" "}
@@ -28,9 +30,9 @@ export default function AboutPage() {
           Politics, Statistics and Macroeconomics.
         </p>
         <p>
-          But I&apos;d spent too long studying models that weren&apos;t applicable in
-          real-life. I felt disconnected from my studies which
-          led to me dropping out after 2 years.
+          But I&apos;d spent too long studying models that weren&apos;t
+          applicable in real-life. I felt disconnected from my studies which led
+          to me dropping out after 2 years.
         </p>
         <p>
           Then came my first contact with programming: as a Data Analyst at a

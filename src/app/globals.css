@@ -20,8 +20,17 @@
     @apply min-h-screen bg-zinc-50 text-zinc-800 dark:bg-zinc-900 dark:text-zinc-200;
   }
 
-  p {
-    @apply dark:text-zinc-300/90;
+  article p,
+  article li {
+    @apply dark:text-zinc-300/80;
+  }
+
+  article p {
+    @apply leading-relaxed;
+  }
+
+  article strong {
+    @apply font-semibold text-zinc-950 dark:text-zinc-200;
   }
 
   article {
@@ -29,11 +38,11 @@
   }
 
   article h2 {
-    @apply pt-8 text-3xl;
+    @apply pt-8 text-3xl max-sm:text-2xl;
   }
 
   article h3 {
-    @apply pt-4 text-lg;
+    @apply pt-4 text-xl max-sm:text-lg;
   }
 
   article ul,

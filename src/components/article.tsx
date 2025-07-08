@@ -11,12 +11,12 @@ export function Article({ html }: { html: string }) {
       const html = highlight(code.textContent as string);
       code.innerHTML = html;
     });
-    
+
     const titles = document.querySelectorAll("h2");
     titles.forEach((title) => {
       title.id = title.textContent?.toLowerCase().replace(/\s/g, "-") as string;
     });
-    
+
     const links = document.querySelectorAll("a");
     links.forEach((link) => {
       if (link.href.startsWith("https://")) {

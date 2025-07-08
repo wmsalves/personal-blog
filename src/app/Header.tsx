@@ -54,7 +54,7 @@ export default function Header() {
           </div>
         ) : (
           <Link
-            className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 ring-1 ring-sky-500 ring-opacity-0 transition-all sm:hover:ring-opacity-100 max-sm:text-center dark:ring-sky-600 dark:ring-opacity-0"
+            className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 ring-1 ring-sky-500 ring-opacity-0 transition-all max-sm:text-center sm:hover:ring-opacity-100 dark:ring-sky-600 dark:ring-opacity-0"
             href="/"
           >
             <div className="absolute left-1 flex size-4 h-full w-12 items-center px-2">

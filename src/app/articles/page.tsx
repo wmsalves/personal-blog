@@ -24,9 +24,7 @@ export default async function ArticlesPage() {
             <div className="flex gap-x-2 gap-y-1 max-sm:flex-col sm:items-center">
               {article.title}{" "}
               <span className="flex gap-2 text-sm text-zinc-500 dark:text-zinc-400">
-                {article?.tags?.map((tag) => (
-                  <span key={tag}>#{tag}</span>
-                ))}
+                {article?.tags?.map((tag) => <span key={tag}>#{tag}</span>)}
               </span>
             </div>
             <span className="text-zinc-500 max-sm:text-sm dark:text-zinc-400">
