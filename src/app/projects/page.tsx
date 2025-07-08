@@ -21,13 +21,13 @@ const projects: Project[] = [
     githubUrl: "https://github.com/LukeberryPi/css2wind",
     technologies: (
       <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-300 dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
           TypeScript
         </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-900 dark:bg-inherit dark:text-zinc-300 dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-900 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
           TailwindCSS
         </span>
-        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-300 dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
           Next.js
         </span>
       </div>
@@ -78,14 +78,14 @@ function ProjectCard({
         <a
           href={url}
           target="_blank"
-          className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
+          className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-200 sm:dark:hover:bg-zinc-800"
         >
           <Globe className="size-4" /> Visit website
         </a>
         <a
           href={githubUrl}
           target="_blank"
-          className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
+          className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-200 sm:dark:hover:bg-zinc-800"
         >
           <GitBranch className="size-4" /> View code
         </a>

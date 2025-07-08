@@ -23,7 +23,7 @@ export default async function ArticlePage({
           {articleData.date}
         </span>
         <div className="flex w-full max-w-prose flex-col items-center justify-center gap-4 px-4 pb-6 pt-1">
-          <h1 className="text-center max-sm:text-3xl text-5xl">
+          <h1 className="text-center text-5xl max-sm:text-3xl leading-tight">
             {articleData.title}
           </h1>
           <div className="flex flex-wrap gap-x-3">
