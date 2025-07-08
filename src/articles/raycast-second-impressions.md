@@ -86,4 +86,4 @@ It is impossible to setup hotkeys for Raycast using the "globe/fn" key. This wou
 
 Raycast is phenomenal. Huge shout out to [@peduarte](https://x.com/peduarte) and the team for developing such an impressive, all-encompassing application.
 
-As with any software, there are improvement points, but I wouldn't write about it to this length if I didn't love it! [Try it out yourself (MacOS only)](https://www.raycast.com/).
+As with any software, there are improvement points, but I wouldn't write about it to this length if I didn't love it! [Try it out yourself](https://www.raycast.com/).

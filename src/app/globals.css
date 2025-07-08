@@ -7,7 +7,7 @@
   --sh-identifier: #8b5cf6; /* violet-600 */
   --sh-sign: #a1a1aa; /* slate-400 */
   --sh-property: #0d9488; /* teal-600 */
-  --sh-entity: #059669; /* emerald-600 */
+  --sh-entity: #10b981; /* emerald-500 */
   --sh-jsxliterals: #c026d3; /* fuchsia-600 */
   --sh-string: #0891b2; /* cyan-600 */
   --sh-keyword: #ef4444; /* red-500 */
@@ -20,9 +20,12 @@
     @apply min-h-screen bg-zinc-50 text-zinc-800 dark:bg-zinc-900 dark:text-zinc-200;
   }
 
-  article p,
+  article p {
+    @apply leading-relaxed text-zinc-700 dark:text-zinc-300/80;
+  }
+
   article li {
-    @apply dark:text-zinc-300/80;
+    @apply text-zinc-700 dark:text-zinc-300/80;
   }
 
   article p {
@@ -34,7 +37,7 @@
   }
 
   article {
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-y-4;
   }
 
   article h2 {
@@ -50,7 +53,7 @@
   }
 
   article ul li {
-    @apply before:pr-2 before:text-sky-500 before:content-['>'] dark:before:text-sky-600;
+    @apply relative pl-4 before:absolute before:left-0 before:top-0 before:text-sky-500 before:content-['>'] dark:before:text-sky-600;
   }
 
   article ol {

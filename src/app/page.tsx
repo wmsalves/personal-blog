@@ -92,7 +92,10 @@ const ExternalLink = (link: Link) => {
           {link.description}
         </span>
       </span>
-      <ArrowUpRight strokeWidth={1.5} className="size-5 shrink-0 text-zinc-800 transition-all sm:group-hover:rotate-45 dark:text-zinc-200" />
+      <ArrowUpRight
+        strokeWidth={1.5}
+        className="size-5 shrink-0 text-zinc-800 transition-all sm:group-hover:rotate-45 dark:text-zinc-200"
+      />
     </a>
   );
 };
@@ -112,7 +115,7 @@ export default function HomePage() {
       </div>
       <div className="flex justify-center gap-6 max-sm:flex-col-reverse sm:justify-between">
         <div className="flex flex-col justify-center gap-4 max-sm:items-center">
-          <div className="group -m-8 flex items-center gap-3 p-8 transition-all select-all">
+          <div className="group -m-8 flex select-all items-center gap-3 p-8 transition-all">
             lukeberrypi@gmail.com
             <div className="inline-flex items-center gap-3">
               {/* TODO add copy email

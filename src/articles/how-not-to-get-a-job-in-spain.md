@@ -105,4 +105,3 @@ After I recovered, I had a big decision to make again:
 - Fly to the UK and try to find a job, since I wouldn't need a Visa to work there (I'm a British Citizen)
 
 I bought a ticket to the UK, with a few plans in mind.
-

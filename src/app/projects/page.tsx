@@ -73,21 +73,26 @@ function ProjectCard({
       <div>
         <p className="p-4">{description}</p>
       </div>
-      <Image src={imageUrl} width={620} height={324} alt="Logo for css2wind website" />
+      <Image
+        src={imageUrl}
+        width={620}
+        height={324}
+        alt="Logo for css2wind website"
+      />
       <div className="flex w-full justify-between divide-x divide-zinc-400 dark:divide-zinc-500">
         <a
           href={url}
           target="_blank"
           className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-200 sm:dark:hover:bg-zinc-800"
         >
-          <Globe className="size-4" /> Visit website
+          <Globe strokeWidth={1.5} className="size-4" /> Visit website
         </a>
         <a
           href={githubUrl}
           target="_blank"
           className="flex grow items-center justify-center gap-2 py-4 transition-all sm:hover:bg-zinc-200 sm:dark:hover:bg-zinc-800"
         >
-          <GitBranch className="size-4" /> View code
+          <GitBranch strokeWidth={1.5} className="size-4" /> View code
         </a>
       </div>
     </div>
