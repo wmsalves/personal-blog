@@ -69,12 +69,12 @@ export default function Header() {
             {isDarkMode ? (
               <Moon
                 strokeWidth={1.4}
-                className="size-5 fill-gray-700 transition-all sm:hover:-rotate-12 sm:hover:scale-110"
+                className="size-5 fill-gray-700 transition-all"
               />
             ) : (
               <Sun
                 strokeWidth={1.4}
-                className="size-5 fill-yellow-300 transition-all sm:hover:rotate-45 sm:hover:scale-110"
+                className="size-5 fill-yellow-300 transition-all sm:hover:rotate-45"
               />
             )}
           </button>
