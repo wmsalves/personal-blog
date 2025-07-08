@@ -21,7 +21,7 @@ export default async function ArticlesPage() {
             key={article.id}
             href={`/articles/${article.id}`}
           >
-            <div className="flex gap-x-2 gap-y-1 max-sm:flex-col sm:items-center">
+            <div className="flex gap-x-2 gap-1 max-sm:flex-col sm:items-center">
               {article.title}{" "}
               <span className="flex gap-2 text-sm text-zinc-500 dark:text-zinc-400">
                 {article?.tags?.map((tag) => <span key={tag}>#{tag}</span>)}

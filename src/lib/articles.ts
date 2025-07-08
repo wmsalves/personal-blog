@@ -76,6 +76,7 @@ export async function getArticleData(id: string) {
     contentHtml,
     title: matterResult.data.title,
     tags: matterResult.data.tags || [],
+    location: matterResult.data.location || "",
     date: moment(matterResult.data.date, "YYYY-MM-DD").format("MMMM  Do, YYYY"),
   };
 }

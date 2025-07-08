@@ -2,6 +2,7 @@
 title: "How (not) to get a job in Spain"
 date: "2024-09-15"
 tags: ["life", "travel"]
+location: "Steyning, United Kingdom"
 ---
 
 I flew to Italy to visit my Dad earlier this year. In that period, I also went to Málaga to see an old friend and to the UK to see my family.
@@ -105,4 +106,3 @@ After I recovered, I had a big decision to make again:
 
 I bought a ticket to the UK, with a few plans in mind.
 
-To be continued...

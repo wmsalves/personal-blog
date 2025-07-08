@@ -19,9 +19,9 @@ export default async function ArticlePage({
   return (
     <>
       <div className="flex flex-col items-center justify-center p-8">
-        <span className="text-sm text-zinc-500 dark:text-zinc-400">
-          {articleData.date}
-        </span>
+        <div className="text-sm text-zinc-500 dark:text-zinc-400">
+          {articleData.date} / {articleData.location}
+        </div>
         <div className="flex w-full max-w-prose flex-col items-center justify-center gap-4 px-4 pb-6 pt-1">
           <h1 className="text-center text-5xl leading-tight max-sm:text-3xl">
             {articleData.title}

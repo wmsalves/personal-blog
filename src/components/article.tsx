@@ -17,12 +17,12 @@ export function Article({ html }: { html: string }) {
       title.id = title.textContent?.toLowerCase().replace(/\s/g, "-") as string;
     });
 
-    const links = document.querySelectorAll("a");
+    const links = document.querySelectorAll(
+      "article a",
+    ) as NodeListOf<HTMLAnchorElement>;
     links.forEach((link) => {
-      if (link.href.startsWith("https://")) {
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-      }
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
     });
   };
   useEffect(handleFormatCode, []);

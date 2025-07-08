@@ -92,7 +92,7 @@ const ExternalLink = (link: Link) => {
           {link.description}
         </span>
       </span>
-      <ArrowUpRight className="size-5 shrink-0 text-zinc-800 transition-all sm:group-hover:rotate-45 dark:text-zinc-200" />
+      <ArrowUpRight strokeWidth={1.5} className="size-5 shrink-0 text-zinc-800 transition-all sm:group-hover:rotate-45 dark:text-zinc-200" />
     </a>
   );
 };
@@ -110,24 +110,24 @@ export default function HomePage() {
           <ExternalLink key={link.url} {...link} />
         ))}
       </div>
-      <div className="flex justify-center gap-y-6 max-sm:flex-col-reverse sm:justify-between">
-        <div className="flex flex-col justify-center gap-y-5 max-sm:items-center">
-          <div className="sm:group relative -m-8 flex items-center gap-3 p-8 transition-all">
+      <div className="flex justify-center gap-6 max-sm:flex-col-reverse sm:justify-between">
+        <div className="flex flex-col justify-center gap-4 max-sm:items-center">
+          <div className="group -m-8 flex items-center gap-3 p-8 transition-all select-all">
             lukeberrypi@gmail.com
-            <div className="inline-flex items-center gap-3 transition-all sm:absolute sm:right-4 sm:opacity-0 sm:group-hover:right-1 sm:group-hover:opacity-100">
+            <div className="inline-flex items-center gap-3">
               {/* TODO add copy email
-                <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-300">
+                <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200">
                 <Copy className="size-4" />
               </button> */}
               <a
                 href="mailto:lukeberrypi@gmail.com"
-                className="text-zinc-800 dark:text-zinc-300"
+                className="text-zinc-800 dark:text-zinc-200"
               >
-                <Send className="size-4" />
+                <Send strokeWidth={1.5} className="size-4" />
               </a>
             </div>
           </div>
-          <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
+          <span className="-mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
             <div className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />
             Online
           </span>
@@ -139,7 +139,7 @@ export default function HomePage() {
             className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-all sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:sm:dark:hover:bg-zinc-800"
           >
             <span className="text-nowrap">Download my CV</span>
-            <Download className="size-5 max-sm:hidden" />
+            <Download strokeWidth={1.5} className="size-5 max-sm:hidden" />
           </a>
         </div>
       </div>

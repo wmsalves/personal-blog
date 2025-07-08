@@ -2,6 +2,7 @@
 title: "Raycast: Second Impressions"
 date: "2024-05-15"
 tags: ["raycast", "technology"]
+location: "Torino, Italy"
 ---
 
 When I first bought a MacBook, I came across Alfred: an app launcher to replace Apple's Spotlight. What I liked the most was:

@@ -34,7 +34,7 @@
   }
 
   article {
-    @apply flex flex-col gap-y-4;
+    @apply flex flex-col gap-4;
   }
 
   article h2 {
@@ -45,17 +45,16 @@
     @apply pt-4 text-xl max-sm:text-lg;
   }
 
-  article ul,
-  article ol {
-    @apply list-inside pl-4;
-  }
-
   article ul {
-    @apply list-disc;
+    @apply list-inside list-none pl-4;
+  }
+
+  article ul li {
+    @apply before:pr-2 before:text-sky-500 before:content-['>'] dark:before:text-sky-600;
   }
 
   article ol {
-    @apply list-decimal;
+    @apply list-inside list-decimal;
   }
 
   article blockquote {

@@ -25,6 +25,7 @@ export const ScrollToTop = () => {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0 })}
+      aria-label="Scroll to top"
       className={`${isVisible ? "opacity-100" : "opacity-0"} fixed z-10 flex items-center gap-2 rounded bg-zinc-50 py-2 pl-4 pr-3 ring-1 ring-zinc-400 transition-all max-sm:bottom-8 max-sm:right-8 sm:right-8 sm:top-8 sm:hover:bg-zinc-200 dark:bg-zinc-900 dark:ring-zinc-500 sm:hover:dark:bg-zinc-800`}
     >
       Back to top

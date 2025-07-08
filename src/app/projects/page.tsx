@@ -24,7 +24,7 @@ const projects: Project[] = [
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
           TypeScript
         </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-900 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
           TailwindCSS
         </span>
         <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
@@ -42,10 +42,10 @@ const projects: Project[] = [
     githubUrl: "https://github.com/LukeberryPi/phived",
     technologies: (
       <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-900 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
           React
         </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-900 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
           TailwindCSS
         </span>
         <span className="rounded-full bg-gradient-to-r from-[#926AFE] to-[#49C7FF] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-none dark:ring-1 dark:ring-zinc-500">
@@ -73,7 +73,7 @@ function ProjectCard({
       <div>
         <p className="p-4">{description}</p>
       </div>
-      <Image src={imageUrl} width={620} height={324} alt="Logo for CSS2wind" />
+      <Image src={imageUrl} width={620} height={324} alt="Logo for css2wind website" />
       <div className="flex w-full justify-between divide-x divide-zinc-400 dark:divide-zinc-500">
         <a
           href={url}
