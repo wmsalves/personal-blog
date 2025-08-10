@@ -39,7 +39,7 @@ const projects: Project[] = [
       "A simpler way to visualize the movies in the Everyman in the Canal 2025 in London. I watched Mean Girls and it was amazing.",
     url: "https://kings-cross-cinema-schedule-2025.vercel.app/",
     imageUrl: "/projects/cinema-schedule.png",
-    githubUrl: "https://github.com/LukeberryPi/",
+    githubUrl: "https://github.com/LukeberryPi/kings-cross-cinema-website",
     technologies: (
       <div className="flex items-center gap-x-3">
         <span className="rounded-full bg-[#FF5D01] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
