@@ -21,14 +21,35 @@ const projects: Project[] = [
     githubUrl: "https://github.com/LukeberryPi/css2wind",
     technologies: (
       <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
           TypeScript
         </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
           TailwindCSS
         </span>
-        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
           Next.js
+        </span>
+      </div>
+    ),
+  },
+  {
+    name: "King's Cross Cinema Schedule",
+    description:
+      "A simpler way to visualize the movies in the Everyman in the Canal 2025 in London. I watched Mean Girls and it was amazing.",
+    url: "https://kings-cross-cinema-schedule-2025.vercel.app/",
+    imageUrl: "/projects/cinema-schedule.png",
+    githubUrl: "https://github.com/LukeberryPi/kings-cross-cinema-website",
+    technologies: (
+      <div className="flex items-center gap-x-3">
+        <span className="rounded-full bg-[#FF5D01] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
+          Astro
+        </span>
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
+          Tailwind
+        </span>
+        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-none ring-1 dark:ring-zinc-500 ring-zinc-600">
+          Vercel
         </span>
       </div>
     ),
@@ -42,13 +63,13 @@ const projects: Project[] = [
     githubUrl: "https://github.com/LukeberryPi/phived",
     technologies: (
       <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
           React
         </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
           TailwindCSS
         </span>
-        <span className="rounded-full bg-gradient-to-r from-[#926AFE] to-[#49C7FF] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-none dark:ring-1 dark:ring-zinc-500">
+        <span className="rounded-full bg-gradient-to-r from-[#926AFE] to-[#49C7FF] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-none ring-1 dark:ring-zinc-500 ring-zinc-600">
           Vite
         </span>
       </div>
@@ -65,7 +86,7 @@ function ProjectCard({
   technologies,
 }: Project) {
   return (
-    <div className="flex-col divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
+    <div className="flex-col divide-y divide-zinc-400 overflow-hidden rounded ring-1 dark:zinc-500 dark:ring-zinc-500 ring-zinc-600">
       <div className="flex items-center justify-between gap-4 p-4 max-sm:flex-col">
         <h2 className="text-xl">{name}</h2>
         {technologies}
@@ -75,8 +96,8 @@ function ProjectCard({
       </div>
       <Image
         src={imageUrl}
-        width={620}
-        height={324}
+        width={1200}
+        height={630}
         alt="Logo for css2wind website"
       />
       <div className="flex w-full justify-between divide-x divide-zinc-400 dark:divide-zinc-500">

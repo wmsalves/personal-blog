@@ -3,7 +3,7 @@ import {
   SiLinkedin,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
-import { ArrowUpRight, Copy, Download, Send } from "lucide-react";
+import { ArrowUpRight, Download, Send } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 
