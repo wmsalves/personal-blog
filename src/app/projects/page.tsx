@@ -13,12 +13,12 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "css2wind",
+    name: "Salgadin",
     description:
-      "Learn TailwindCSS by playing a minigame: there are eight CSS properties that you must translate to the equivalent TailwindCSS utility. Bet you can't get 8/8.",
-    url: "https://css2wind.com",
-    imageUrl: "/projects/css2wind.png",
-    githubUrl: "https://github.com/LukeberryPi/css2wind",
+      "A web application to manage personal finances with daily spending summaries and visual charts highlighting where your money goes. ",
+    url: "https://salgadin.vercel.app/",
+    imageUrl: "/projects/Salgadin.png",
+    githubUrl: "https://github.com/wmsalves/Salgadin",
     technologies: (
       <div className="flex items-center gap-x-3">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
@@ -34,12 +34,12 @@ const projects: Project[] = [
     ),
   },
   {
-    name: "King's Cross Cinema Schedule",
+    name: "Blog Node",
     description:
-      "A simpler way to visualize the movies in the Everyman in the Canal 2025 in London. I watched Mean Girls and it was amazing.",
-    url: "https://kings-cross-cinema-schedule-2025.vercel.app/",
-    imageUrl: "/projects/cinema-schedule.png",
-    githubUrl: "https://github.com/LukeberryPi/kings-cross-cinema-website",
+      "A simple blog application demonstrating CRUD (Create, Read, Update, Delete) operations using Node.js, Express, EJS, and MongoDB. It provides a basic setup for building a full-stack application with a MongoDB database, user authentication, and dynamic content rendering",
+    url: "",
+    imageUrl: "/projects/blogNode.png",
+    githubUrl: "https://github.com/wmsalves/blog-node-mongo",
     technologies: (
       <div className="flex items-center gap-x-3">
         <span className="rounded-full bg-[#FF5D01] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
@@ -55,12 +55,12 @@ const projects: Project[] = [
     ),
   },
   {
-    name: "phived",
+    name: "BeWear",
     description:
-      "Stop procrastinating by dealing with five tasks at a time. If you want to add more tasks you need to resolve a previous one. Surprisingly effective.",
-    url: "https://phived.com",
-    imageUrl: "/projects/phived.png",
-    githubUrl: "https://github.com/LukeberryPi/phived",
+      " A modern web e-commerce app built with Next.js, React, Tailwind CSS, and PostgreSQL, featuring a shopping cart, Stripe checkout, and user authentication.",
+    url: "https://bewear-wine.vercel.app/",
+    imageUrl: "/projects/beWear.png",
+    githubUrl: "https://github.com/wmsalves/bewear",
     technologies: (
       <div className="flex items-center gap-x-3">
         <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
