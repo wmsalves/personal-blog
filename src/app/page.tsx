@@ -49,32 +49,14 @@ const externalLinks: Link[] = [
   {
     name: "LinkedIn",
     description: "follow my career",
-    url: "https://linkedin.com/in/lukeberrypi",
+    url: "https://linkedin.com/in/wmsalves",
     icon: <SiLinkedin className="fill-[#0077B5] dark:fill-zinc-200" />,
   },
   {
     name: "GitHub",
     description: "steal my code",
-    url: "https://github.com/lukeberrypi",
+    url: "https://github.com/wmsalves",
     icon: <SiGithub />,
-  },
-  {
-    name: "YouTube",
-    description: "watch me talk",
-    url: "https://youtube.com/@lukeberrypi",
-    icon: <SiYoutube className="fill-[#FF0032] dark:fill-zinc-200" />,
-  },
-  {
-    name: "X (formerly Twitter)",
-    description: "read my mind",
-    url: "https://x.com/lukeberrypi",
-    icon: <XLogo />,
-  },
-  {
-    name: "Get 10% OFF Raycast Pro",
-    description: "upgrade your workflow",
-    url: "https://www.raycast.com/pro?via=lukeberrypi",
-    icon: <RaycastLogo />,
   },
 ];
 
@@ -104,9 +86,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
       <p className="text-sm">
-        London-based Brazilian obsessed with UI for a decade. Working as a
-        Software Engineer for half that time. I love Raycast, TailwindCSS,
-        DJing, playing football, and creating pretty websites.
+Brazilian developer passionate about back-end and problem-solving. Experienced with JavaScript, Vue.js, Node.js, and SQL Server, while also exploring C# and .NET to broaden my expertise. I enjoy coding, learning new technologies, and building efficient solutions that make an impact.
       </p>
       <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
         {externalLinks.map((link: Link) => (
@@ -116,7 +96,7 @@ export default function HomePage() {
       <div className="flex justify-center gap-6 max-sm:flex-col-reverse sm:justify-between">
         <div className="flex flex-col justify-center gap-4 max-sm:items-center">
           <div className="group -m-8 flex select-all items-center gap-3 p-8 transition-transform">
-            lukeberrypi@gmail.com
+            devwmsalves@gmail.com
             <div className="inline-flex items-center gap-3">
               {/* TODO add copy email
                 <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200">
