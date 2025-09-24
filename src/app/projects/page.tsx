@@ -12,69 +12,81 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    name: "Salgadin",
-    description:
-      "A web application to manage personal finances with daily spending summaries and visual charts highlighting where your money goes. ",
-    url: "https://salgadin.vercel.app/",
-    imageUrl: "/projects/Salgadin.png",
-    githubUrl: "https://github.com/wmsalves/Salgadin",
-    technologies: (
-      <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
-          TypeScript
-        </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
-          TailwindCSS
-        </span>
-        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Next.js
-        </span>
-      </div>
-    ),
-  },
-  {
-    name: "Blog Node",
-    description:
-      "A simple blog application demonstrating CRUD (Create, Read, Update, Delete) operations using Node.js, Express, EJS, and MongoDB. It provides a basic setup for building a full-stack application with a MongoDB database, user authentication, and dynamic content rendering",
-    url: "",
-    imageUrl: "/projects/blogNode.png",
-    githubUrl: "https://github.com/wmsalves/blog-node-mongo",
-    technologies: (
-      <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#FF5D01] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Astro
-        </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Tailwind
-        </span>
-        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-none ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Vercel
-        </span>
-      </div>
-    ),
-  },
-  {
-    name: "BeWear",
-    description:
-      " A modern web e-commerce app built with Next.js, React, Tailwind CSS, and PostgreSQL, featuring a shopping cart, Stripe checkout, and user authentication.",
-    url: "https://bewear-wine.vercel.app/",
-    imageUrl: "/projects/beWear.png",
-    githubUrl: "https://github.com/wmsalves/bewear",
-    technologies: (
-      <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
-          React
-        </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
-          TailwindCSS
-        </span>
-        <span className="rounded-full bg-gradient-to-r from-[#926AFE] to-[#49C7FF] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-none ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Vite
-        </span>
-      </div>
-    ),
-  },
+{
+  name: "Salgadin",
+  description:
+    "A web-based personal finance management SaaS with daily spending summaries, interactive charts, and expense categorization, built with ASP.NET Core and React.",
+  url: "https://salgadin.vercel.app/",
+  imageUrl: "/projects/Salgadin.png",
+  githubUrl: "https://github.com/wmsalves/Salgadin",
+  technologies: (
+    <div className="flex items-center gap-x-3">
+      <span className="rounded-full bg-[#61DAFB] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        React.js
+      </span>
+      <span className="rounded-full bg-[#68217A] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        ASP.NET Core
+      </span>
+      <span className="rounded-full bg-[#512BD4] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        Entity Framework Core
+      </span>
+      <span className="rounded-full bg-[#CC2927] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        SQL Server
+      </span>
+    </div>
+  ),
+},
+{
+  name: "Blog Node",
+  description:
+    "A simple blog application demonstrating CRUD (Create, Read, Update, Delete) operations using Node.js, Express, EJS, and MongoDB. It provides a basic setup for building a full-stack application with a MongoDB database, user authentication, and dynamic content rendering",
+  url: "",
+  imageUrl: "/projects/blogNode.png",
+  githubUrl: "https://github.com/wmsalves/blog-node-mongo",
+  technologies: (
+    <div className="flex items-center gap-x-3">
+      <span className="rounded-full bg-green-600 px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        Node.js
+      </span>
+      <span className="rounded-full bg-gray-700 px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        Express
+      </span>
+      <span className="rounded-full bg-yellow-500 px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        EJS
+      </span>
+      <span className="rounded-full bg-[#4DB33D] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        MongoDB
+      </span>
+    </div>
+  ),
+},
+{
+  name: "BeWear",
+  description:
+    "A modern web e-commerce app built with Next.js, React, Tailwind CSS, and PostgreSQL, featuring a shopping cart, Stripe checkout, and user authentication.",
+  url: "https://bewear-wine.vercel.app/",
+  imageUrl: "/projects/beWear.png",
+  githubUrl: "https://github.com/wmsalves/bewear",
+  technologies: (
+    <div className="flex items-center gap-x-3">
+      <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        Next.js
+      </span>
+      <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        React
+      </span>
+      <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        TailwindCSS
+      </span>
+      <span className="rounded-full bg-[#336791] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        PostgreSQL
+      </span>
+      <span className="rounded-full bg-[#635BFF] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+        Stripe
+      </span>
+    </div>
+  ),
+}
 ];
 
 function ProjectCard({
