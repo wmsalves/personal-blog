@@ -86,7 +86,10 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
       <p className="text-sm">
-Brazilian developer passionate about back-end and problem-solving. Experienced with JavaScript, Vue.js, Node.js, and SQL Server, while also exploring C# and .NET to broaden my expertise. I enjoy coding, learning new technologies, and building efficient solutions that make an impact.
+        Brazilian developer passionate about back-end and problem-solving.
+        Experienced with JavaScript, Vue.js, Node.js, and SQL Server, while also
+        exploring C# and .NET to broaden my expertise. I enjoy coding, learning
+        new technologies, and building efficient solutions that make an impact.
       </p>
       <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
         {externalLinks.map((link: Link) => (
@@ -117,8 +120,8 @@ Brazilian developer passionate about back-end and problem-solving. Experienced w
         </div>
         <div className="flex flex-col gap-2">
           <a
-            href="/luke-berry-cv.pdf"
-            download="Luke-Berry-CV.pdf"
+            href="/CV-Wemerson.pdf"
+            download="CV-Wemerson.pdf"
             className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-transform sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:sm:dark:hover:bg-zinc-800"
           >
             <span className="text-nowrap">Download my CV</span>
